@@ -16,6 +16,7 @@ public abstract class BaseTest {
     @BeforeClass
     public void setUp() {
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get(BASE_URL + getPath());
     }
 

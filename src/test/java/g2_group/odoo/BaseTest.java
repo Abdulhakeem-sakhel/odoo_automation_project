@@ -16,13 +16,14 @@ public abstract class BaseTest {
     @BeforeClass
     public void setUp() {
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get(BASE_URL + getPath());
     }
 
     @AfterClass
     public void tearDown() {
         if (driver != null) {
-            driver.quit();
+            //driver.quit();
         }
     }
 }

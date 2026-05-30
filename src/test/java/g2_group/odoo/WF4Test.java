@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import g2_group.odoo.util.RandomStringUtil;
+
 public class WF4Test extends BaseTest {
 
     private String Path = "/odoo/all-tasks";
@@ -88,9 +90,9 @@ public class WF4Test extends BaseTest {
     }
     @Test (priority = 5)
     public void multipleGrouping() throws InterruptedException {
+        tasksPage.selectMyTasks();
         tasksPage.addGrouping("project_id");
         tasksPage.addGrouping("stage_id");
-        tasksPage.toggleDropDownSearchOff();
         tasksPage.expandAllGroups();
         Assert.assertTrue(tasksPage.checkGrouping(List.of(
             "Backend Upgrade", "To Do", "In Progress", "Done",
@@ -107,5 +109,56 @@ public class WF4Test extends BaseTest {
         tasksPage.clearSearchBox();
         tasksPage.clickSavedSearch("High Pr");
         Assert.assertTrue(tasksPage.checkPriorityFilter(value));
+    }
+
+    @Test (priority = 7)
+    public void searchingRandomLetter() {
+        String taskName = "xyz123999";
+        tasksPage.searchForTask(taskName);
+        Assert.assertTrue(tasksPage.checkNoResults());
+    }
+
+    @Test (priority = 8) 
+    public void filteringItemThatDoesNotExist() { 
+        tasksPage.searchForTask("Create Logo");
+        tasksPage.filterUnassigned();
+        Assert.assertTrue(tasksPage.checkNoResults());
+    }
+
+    @Test (priority = 9)
+    public void groupingEmptyResult() {
+        String taskName = "xyz123999";
+        tasksPage.searchForTask(taskName);
+        tasksPage.addGrouping("project_id");
+        Assert.assertTrue(tasksPage.checkNoResults());
+    }
+
+    @Test (priority = 10)
+    public void searchCaseInsensitive() {
+        String taskName = "api";
+        tasksPage.searchForTask(taskName);
+        Assert.assertTrue(tasksPage.allTittleContains(taskName));
+    }
+
+    @Test (priority = 11)
+    public void handleExtraSpace() {
+        String taskName = "                12 Task             ";
+        tasksPage.searchForTask(taskName);
+        Assert.assertTrue(tasksPage.allTittleContains(taskName.trim()));
+    }
+
+    @Test (priority = 12)
+    public void longSearchTaskName() {
+        String taskName = RandomStringUtil.randomString(10000);
+        tasksPage.searchForTask(taskName);
+        Assert.assertTrue(tasksPage.checkNoResults());
+    }
+
+    @Test (priority = 13)
+    public void simpleScriptInjection() {
+        String taskName = "<script>alert(\"test\")</script>";  
+        tasksPage.searchForTask(taskName);
+        Assert.assertTrue(tasksPage.checkNoResults());
+        Assert.assertFalse(tasksPage.checkAlerts());
     }
 }

@@ -2,6 +2,7 @@ package g2_group.odoo;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
@@ -25,11 +26,13 @@ public class AllTasksPage {
     private By gropingRowsBy = new By.ByCssSelector("tr.o_group_has_content");
     private By titleCellsBy = new By.ByCssSelector("td[name='name']");
     private By unassignedFilterBy = new By.ByXPath("//span[text()='Unassigned']");
+    private By myTasksBy = new By.ByXPath("//span[text()='My Tasks']");
     private By unassignedRowsBy = new By.ByCssSelector("td[name=user_ids]");
     private By menuToggleButton = new By.ByCssSelector("button.o_searchview_dropdown_toggler");
     private By dropdownFave = new By.ByCssSelector("div.o_favorite_menu button.o_menu_item");
     private By dropdownFaveInput = new By.ByCssSelector("div.o_favorite_menu input.o_input");
     private By dropdownFaveSave = new By.ByCssSelector("div.o_favorite_menu button.o_save_favorite");
+    private By noResultsBy = new By.ByCssSelector("div.o_nocontent_help");
 
     private By getFiledCustomSearch(String field) {
         return new By.ByCssSelector(String.format("ul li[data-name='%s']", field));
@@ -41,8 +44,8 @@ public class AllTasksPage {
         return new By.ByXPath(String.format("//div[contains(@class, 'o_favorite_menu')]//span[contains(text(), '%s')]/ancestor::span[contains(@class, 'o-dropdown-item')]", faveName));
     }
 
-    WebDriver driver;
-    WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
     public AllTasksPage(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -73,10 +76,13 @@ public class AllTasksPage {
     }
     
     public boolean allTittleContains(String taskName) {
-        wait.until(ExpectedConditions.textToBePresentInElementLocated(titleCellsBy, taskName));
+        wait.until(ExpectedConditions.textMatches(titleCellsBy, Pattern.compile(taskName, Pattern.CASE_INSENSITIVE)));
         List<WebElement> titleCells = driver.findElements(titleCellsBy);
         for (WebElement titleCell : titleCells) {
-            if (!titleCell.getText().contains(taskName)) {
+            String cellText = titleCell.getText().toLowerCase().trim();
+            String searchTarget = taskName.toLowerCase().trim();
+
+            if (!cellText.contains(searchTarget)) {
                 return false;
             }
         }
@@ -84,12 +90,12 @@ public class AllTasksPage {
     }
 
     public boolean TittleContainsOnOF(List<String> taskNames) {
-        wait.until(ExpectedConditions.textToBePresentInElementLocated(titleCellsBy, taskNames.get(0)));
+        wait.until(ExpectedConditions.textMatches(titleCellsBy, Pattern.compile(taskNames.get(0), Pattern.CASE_INSENSITIVE)));
         List<WebElement> titleCells = driver.findElements(titleCellsBy);
         for (WebElement titleCell : titleCells) {
             boolean contains = false;
             for (String taskName : taskNames) {
-                if (titleCell.getText().contains(taskName)) {
+                if (titleCell.getText().toLowerCase().contains(taskName.toLowerCase())) {
                     contains = true;
                     break;
                 }
@@ -106,6 +112,7 @@ public class AllTasksPage {
         WebElement groupCustomMenu = wait.until(ExpectedConditions.visibilityOfElementLocated(groupCustomMenuBy));
         Select objSelect = new Select(groupCustomMenu);
         objSelect.selectByValue(groupingValue);
+        toggleDropDownSearchOff();
     }
 
     
@@ -153,6 +160,7 @@ public class AllTasksPage {
     public void filterUnassigned() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(searchBoxBy)).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(unassignedFilterBy)).click();
+        toggleDropDownSearchOff();
     }
 
     public boolean checkUnassignedFilter() {
@@ -217,6 +225,24 @@ public class AllTasksPage {
         WebElement fave = faves.get(0);
         fave.click();
         wait.until(ExpectedConditions.attributeContains(fave, "aria-checked", "true"));
+        toggleDropDownSearchOff();
+    }
+    public boolean checkNoResults() {
+        WebElement noResults = wait.until(ExpectedConditions.visibilityOfElementLocated(noResultsBy));
+        return noResults.isDisplayed();
+    }
+    public boolean checkAlerts() {
+        try {
+            wait.until(ExpectedConditions.alertIsPresent());
+            driver.switchTo().alert().dismiss();
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+    public void selectMyTasks() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(searchBoxBy)).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(myTasksBy)).click();
         toggleDropDownSearchOff();
     }
 }

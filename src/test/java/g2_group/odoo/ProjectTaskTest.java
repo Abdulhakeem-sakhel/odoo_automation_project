@@ -55,42 +55,40 @@ public class ProjectTaskTest extends BaseTest {
 	}
 	
 	@Test(priority=1)
-	public void CreateTask1() {
+	public void CreateTask1() throws InterruptedException {
 		String taskTitle = "All Positive";
-		String assignee = "Fadi Abuaita";
+		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "07/25/2026";
-		projectTask.createTask(taskTitle, dueDate, assignee);
-		
+		projectTask.createTask(taskTitle, dueDate, assignees);
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=2)
-	public void CreateTask2() {
+	public void CreateTask2() throws InterruptedException {
 		String taskTitle = "Minimal Task";
-		String assignee = "";
+		List<String> assignees = Arrays.asList("");
 		String duoDate = "";
-		projectTask.createTask(taskTitle, duoDate, assignee);
+		projectTask.createTask(taskTitle, duoDate, assignees);
 		
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=3)
-	public void CreateTask3() {
-		String taskTitle = "todays date task";
-		String assignee = "Fadi Abuaita";
-		String dueDate = "05/30/2026";
-		projectTask.createTask(taskTitle, dueDate, assignee);
+	public void CreateTask3() throws InterruptedException {
+		String taskTitle = "UrgentTask";
+		List<String> assignees = Arrays.asList("Fadi Abuaita");
+		String dueDate = "05/31/2026";
+		projectTask.createTask(taskTitle, dueDate, assignees);
 		
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=4)
-	public void CreateTask4() {
+	public void CreateTask4() throws InterruptedException {
 		String taskTitle = "Multiple Assignee Task";
 		String dueDate = "05/30/2026";
 		List<String> assignees = Arrays.asList("Fadi Abuaita", "Abdulhakeem Sakhel", "Bashar Abuhwila");
 		projectTask.createTask(taskTitle, dueDate, assignees);
-		
 		driver.get(BASE_URL + getPath());
 	}
 	
@@ -113,11 +111,11 @@ public class ProjectTaskTest extends BaseTest {
 	}
 	
 	@Test(priority=6)
-	public void CreateTask6() {
+	public void CreateTask6() throws InterruptedException {
 		String taskTitle = "in the Past Task";
-		String assignee = "Fadi Abuaita";
+		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "02/25/2026";
-		projectTask.createTask(taskTitle, dueDate, assignee);
+		projectTask.createTask(taskTitle, dueDate, assignees);
 		
 		driver.get(BASE_URL + getPath());
 	}
@@ -136,31 +134,31 @@ public class ProjectTaskTest extends BaseTest {
 	}
 	
 	@Test(priority=8)
-	public void CreateTask8() {
+	public void CreateTask8() throws InterruptedException {
 		String taskTitle = "!@#$%^&**";
-		String assignee = "Fadi Abuaita";
+		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "07/25/2026";
-		projectTask.createTask(taskTitle, dueDate, assignee);
+		projectTask.createTask(taskTitle, dueDate, assignees);
 		
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=9)
-	public void CreateTask9() {
+	public void CreateTask9() throws InterruptedException {
 		String taskTitle = "Invalid Date";
-		String assignee = "Fadi Abuaita";
+		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "99/99/9999";
-		projectTask.createTask(taskTitle, dueDate, assignee);
+		projectTask.createTask(taskTitle, dueDate, assignees);
 		
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=10)
-	public void CreateTask10() {
+	public void CreateTask10() throws InterruptedException {
 		String taskTitle = "Far Future Date";
-		String assignee = "Fadi Abuaita";
+		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "03/20/2036";
-		projectTask.createTask(taskTitle, dueDate, assignee);
+		projectTask.createTask(taskTitle, dueDate, assignees);
 		
 		driver.get(BASE_URL + getPath());
 	}

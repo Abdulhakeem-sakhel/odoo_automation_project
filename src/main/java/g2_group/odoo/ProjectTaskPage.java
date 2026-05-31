@@ -22,11 +22,11 @@ public class ProjectTaskPage {
     protected By assigneeFieldBy    = new By.ByXPath("//input[@id='user_ids_0']");
     protected By addTaskBtnBy       = new By.ByCssSelector("button.btn.btn-primary.o_kanban_add.me-1");
     protected By dueDateBy 			= new By.ByXPath("//input[@id='date_deadline_0']");
-   
     
     private By getTaskCard(String taskTittle) {
     return new By.ByXPath(String.format("//span[contains(text(), '%s')]", taskTittle));
     }
+    
     
     public ProjectTaskPage(WebDriver driver) {
     	this.driver=driver;
@@ -34,45 +34,49 @@ public class ProjectTaskPage {
     }
     
     
-    public void createTask(String taskTitle, String dueDate, String assignee) {
-    	wait.until(ExpectedConditions.visibilityOfElementLocated(createNewTaskBtnBy)).click();
-    	wait.until(ExpectedConditions.visibilityOfElementLocated(titleFieldBy)).sendKeys(taskTitle);
-    	wait.until(ExpectedConditions.visibilityOfElementLocated(addTaskBtnBy)).click();
-    	wait.until(ExpectedConditions.visibilityOfElementLocated(getTaskCard(taskTitle))).click();
-    	wait.until(ExpectedConditions.visibilityOfElementLocated(assigneeFieldBy)).sendKeys(assignee+ Keys.ENTER);
-    	WebElement dateInput = wait.until(ExpectedConditions.visibilityOfElementLocated(dueDateBy));
-    	dateInput.click();
-    	dateInput.sendKeys(dueDate+ Keys.ENTER);
-    }
+//    public void createTask(String taskTitle, String dueDate, String assignee) throws InterruptedException {
+//    	wait.until(ExpectedConditions.visibilityOfElementLocated(createNewTaskBtnBy)).click();
+//    	wait.until(ExpectedConditions.visibilityOfElementLocated(titleFieldBy)).sendKeys(taskTitle);
+//    	wait.until(ExpectedConditions.visibilityOfElementLocated(addTaskBtnBy)).click();
+//    	wait.until(ExpectedConditions.visibilityOfElementLocated(getTaskCard(taskTitle))).click();
+//    	wait.until(ExpectedConditions.visibilityOfElementLocated(assigneeFieldBy)).sendKeys(assignee+ Keys.ENTER);
+//    	wait.until(ExpectedConditions.visibilityOfElementLocated(addTaskBtnBy)).click();
+//    	try {
+//            Thread.sleep(500);
+//
+//        } catch(Exception e) {
+//            
+//        }
+//    	WebElement dateInput = wait.until(ExpectedConditions.visibilityOfElementLocated(dueDateBy));
+//    	dateInput.click();
+//    	dateInput.sendKeys(dueDate+ Keys.ENTER);
+//    }
     
-    public void createTask(String taskTitle, String dueDate, List<String> assignees) {
+    
+    public void createTask(String taskTitle, String dueDate, List<String> assignees) throws InterruptedException {
     	wait.until(ExpectedConditions.visibilityOfElementLocated(createNewTaskBtnBy)).click();
     	wait.until(ExpectedConditions.visibilityOfElementLocated(titleFieldBy)).sendKeys(taskTitle);
     	wait.until(ExpectedConditions.visibilityOfElementLocated(addTaskBtnBy)).click();
     	wait.until(ExpectedConditions.visibilityOfElementLocated(getTaskCard(taskTitle))).click();
     	for (String assignee : assignees) {
-            try {
+            
+    	    WebElement assigneeField = wait.until(ExpectedConditions.elementToBeClickable(assigneeFieldBy));
+    	    
+    	    assigneeField.click();
+    	    assigneeField.sendKeys(assignee);
+    	    assigneeField.sendKeys(Keys.ENTER); 
+    	    
+    	    try {
                 Thread.sleep(2000);
 
             } catch(Exception e) {
                 
             }
-    	    WebElement assigneeField = wait.until(ExpectedConditions.elementToBeClickable(assigneeFieldBy));
-    	    
-    	    assigneeField.click();
-    	    
-    	    assigneeField.sendKeys(assignee);
-    	    assigneeField.sendKeys(Keys.ENTER); 
-    	    
-    	    try {
-    	        Thread.sleep(500); 
-    	    } catch (InterruptedException e) {
-    	        Thread.currentThread().interrupt();
-    	    }
     	}
     	WebElement dateInput = wait.until(ExpectedConditions.visibilityOfElementLocated(dueDateBy));
     	dateInput.click();
     	dateInput.sendKeys(dueDate+ Keys.ENTER);
+    	Thread.sleep(500);
     }
     
     

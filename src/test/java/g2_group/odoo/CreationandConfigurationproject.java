@@ -139,9 +139,9 @@ public class CreationandConfigurationproject {
 
 
     @Test(priority = 13)
-    public void TC_WF1_14_ProjectCleanupAndDeletionProcessing() {
+    public void TC_WF1_13_ProjectCleanupAndDeletionProcessing() {
         projectPage.executeAction("Delete");
-        Assert.assertTrue(true, "TC-WF1-14 Passed: Teardown routine successfully reset environment state.");
+        Assert.assertTrue(true, "TC-WF1-13 Passed: Teardown routine successfully reset environment state.");
     }
    
 }

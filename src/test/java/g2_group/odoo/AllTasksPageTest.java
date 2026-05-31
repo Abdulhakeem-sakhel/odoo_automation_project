@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import g2_group.odoo.util.RandomStringUtil;
 
-public class WF4Test extends BaseTest {
+public class AllTasksPageTest extends BaseTest {
 
     private String Path = "/odoo/all-tasks";
     private String LoginPath = "/web/login";
@@ -30,8 +30,8 @@ public class WF4Test extends BaseTest {
     @BeforeClass
     public void startClean() {
         driver.manage().deleteAllCookies();
-        String email = ConfigReader.getProperty("email");
-        String password = ConfigReader.getProperty("password");
+        String email = ConfigReader.getProperty("userEmail");
+        String password = ConfigReader.getProperty("userPassword");
         
         driver.get(BASE_URL + LoginPath);
         loginPage.loginFromUI(email, password);

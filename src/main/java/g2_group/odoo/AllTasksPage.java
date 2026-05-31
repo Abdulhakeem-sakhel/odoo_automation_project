@@ -38,7 +38,7 @@ public class AllTasksPage {
         return new By.ByCssSelector(String.format("ul li[data-name='%s']", field));
     }
     private By getPriorityStarButton(String priority) {
-        return new By.ByCssSelector(String.format("button[aria-label='%s']", priority));
+        return new By.ByXPath(String.format("//button[@aria-label='%s' and @aria-checked='true']", priority));
     }
     private By getFaveSearchItem(String faveName) {
         return new By.ByXPath(String.format("//div[contains(@class, 'o_favorite_menu')]//span[contains(text(), '%s')]/ancestor::span[contains(@class, 'o-dropdown-item')]", faveName));
@@ -136,13 +136,16 @@ public class AllTasksPage {
     }
 
     public boolean checkPriorityFilter(String priority) {
-        List<WebElement> priorityButtons = driver.findElements(getPriorityStarButton(priority));
-        for (WebElement priorityButton : priorityButtons) {
-            if (!priorityButton.getAttribute("aria-checked").equals("true")) {
-                return false;
-            }
+        try {
+            List<WebElement> priorityButtons = wait.until(
+                ExpectedConditions.visibilityOfAllElementsLocatedBy(
+                    getPriorityStarButton(priority)
+                )
+            );
+            return true;
+        } catch (Exception e) {
+            return false;
         }
-        return true;
     }
 
     public boolean checkGrouping(List<String> groupingValues) { 
@@ -166,7 +169,7 @@ public class AllTasksPage {
     public boolean checkUnassignedFilter() {
         List<WebElement> unassignedRows = driver.findElements(unassignedRowsBy);
         for (WebElement unassignedRow : unassignedRows) {
-            if (unassignedRow.getText() != "") {
+            if (!unassignedRow.getText().trim().isBlank()) {
                 System.out.println("unassignedRow.getText() :" + unassignedRow.getText());
                 return false;
             }

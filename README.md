@@ -1,1 +1,1 @@
-.
+Odoo_Automation_Project

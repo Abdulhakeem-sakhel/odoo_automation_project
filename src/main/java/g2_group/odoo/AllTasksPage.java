@@ -166,7 +166,7 @@ public class AllTasksPage {
     public boolean checkUnassignedFilter() {
         List<WebElement> unassignedRows = driver.findElements(unassignedRowsBy);
         for (WebElement unassignedRow : unassignedRows) {
-            if (unassignedRow.getText() != "") {
+            if (!unassignedRow.getText().trim().isBlank()) {
                 System.out.println("unassignedRow.getText() :" + unassignedRow.getText());
                 return false;
             }

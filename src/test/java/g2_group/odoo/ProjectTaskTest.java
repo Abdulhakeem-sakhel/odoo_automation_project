@@ -102,7 +102,6 @@ public class ProjectTaskTest extends BaseTest {
 	    Assert.assertTrue(errorMessage.contains("Missing required fields"));
 	    
 	    
-	    
 	    String targetUrl = BASE_URL + getPath();
 	    
 	    try {
@@ -128,8 +127,6 @@ public class ProjectTaskTest extends BaseTest {
 	    
 	    String errorMessage = projectTask.createTaskWithInvalidTitle(whitespaceTitle);
 	    Assert.assertTrue(errorMessage.contains("Missing required fields"));
-	    
-	    
 	    
 	    String targetUrl = BASE_URL + getPath();
 	    ((JavascriptExecutor) driver).executeScript("window.location.href='" + targetUrl + "';");

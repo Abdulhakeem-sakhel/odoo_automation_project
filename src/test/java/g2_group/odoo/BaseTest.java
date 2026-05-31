@@ -22,7 +22,7 @@ public abstract class BaseTest {
     @AfterClass
     public void tearDown() {
         if (driver != null) {
-            driver.quit();
+            //driver.quit();
         }
     }
 }

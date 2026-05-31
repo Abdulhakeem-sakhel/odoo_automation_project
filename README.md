@@ -1,1 +1,1 @@
-Odoo_Automation_Project
+#  Automation Testing for Odoo Project

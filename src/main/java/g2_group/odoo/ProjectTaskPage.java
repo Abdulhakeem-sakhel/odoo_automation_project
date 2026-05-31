@@ -2,6 +2,7 @@ package g2_group.odoo;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -50,9 +51,16 @@ public class ProjectTaskPage {
     	wait.until(ExpectedConditions.visibilityOfElementLocated(addTaskBtnBy)).click();
     	wait.until(ExpectedConditions.visibilityOfElementLocated(getTaskCard(taskTitle))).click();
     	for (String assignee : assignees) {
+            try {
+                Thread.sleep(2000);
+
+            } catch(Exception e) {
+                
+            }
     	    WebElement assigneeField = wait.until(ExpectedConditions.elementToBeClickable(assigneeFieldBy));
     	    
     	    assigneeField.click();
+    	    
     	    assigneeField.sendKeys(assignee);
     	    assigneeField.sendKeys(Keys.ENTER); 
     	    

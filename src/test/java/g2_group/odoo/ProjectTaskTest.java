@@ -4,8 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -57,53 +55,53 @@ public class ProjectTaskTest extends BaseTest {
 	}
 	
 	@Test(priority=1)
-	public void CreateTask1() throws InterruptedException {
+	public void CreateTask1() {
 		String taskTitle = "All Positive";
 		String assignee = "Fadi Abuaita";
 		String dueDate = "07/25/2026";
 		projectTask.createTask(taskTitle, dueDate, assignee);
-		Thread.sleep(2000);
+		
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=2)
-	public void CreateTask2() throws InterruptedException {
+	public void CreateTask2() {
 		String taskTitle = "Minimal Task";
 		String assignee = "";
 		String duoDate = "";
 		projectTask.createTask(taskTitle, duoDate, assignee);
-		Thread.sleep(2000);
+		
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=3)
-	public void CreateTask3() throws InterruptedException {
+	public void CreateTask3() {
 		String taskTitle = "todays date task";
 		String assignee = "Fadi Abuaita";
 		String dueDate = "05/30/2026";
 		projectTask.createTask(taskTitle, dueDate, assignee);
-		Thread.sleep(2000);
+		
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=4)
-	public void CreateTask4() throws InterruptedException {
+	public void CreateTask4() {
 		String taskTitle = "Multiple Assignee Task";
 		String dueDate = "05/30/2026";
 		List<String> assignees = Arrays.asList("Fadi Abuaita", "Abdulhakeem Sakhel", "Bashar Abuhwila");
 		projectTask.createTask(taskTitle, dueDate, assignees);
-		Thread.sleep(2000);
+		
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=5)
-	public void CreateTask5() throws InterruptedException {
+	public void CreateTask5() {
 		
 	    String errorMessage = projectTask.createTaskExpectingFailure();
 	    
 	    Assert.assertTrue(errorMessage.contains("Missing required fields"));
 	    
-	    Thread.sleep(500);
+	    
 	    
 	    String targetUrl = BASE_URL + getPath();
 	    
@@ -115,55 +113,55 @@ public class ProjectTaskTest extends BaseTest {
 	}
 	
 	@Test(priority=6)
-	public void CreateTask6() throws InterruptedException {
+	public void CreateTask6() {
 		String taskTitle = "in the Past Task";
 		String assignee = "Fadi Abuaita";
 		String dueDate = "02/25/2026";
 		projectTask.createTask(taskTitle, dueDate, assignee);
-		Thread.sleep(2000);
+		
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=7)
-	public void CreateTaskWithWhitespaceTitle() throws InterruptedException {
+	public void CreateTaskWithWhitespaceTitle() {
 	    String whitespaceTitle = "     "; 
 	    
 	    String errorMessage = projectTask.createTaskWithInvalidTitle(whitespaceTitle);
 	    Assert.assertTrue(errorMessage.contains("Missing required fields"));
 	    
-	    Thread.sleep(500);
+	    
 	    
 	    String targetUrl = BASE_URL + getPath();
 	    ((JavascriptExecutor) driver).executeScript("window.location.href='" + targetUrl + "';");
 	}
 	
 	@Test(priority=8)
-	public void CreateTask8() throws InterruptedException {
+	public void CreateTask8() {
 		String taskTitle = "!@#$%^&**";
 		String assignee = "Fadi Abuaita";
 		String dueDate = "07/25/2026";
 		projectTask.createTask(taskTitle, dueDate, assignee);
-		Thread.sleep(2000);
+		
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=9)
-	public void CreateTask9() throws InterruptedException {
+	public void CreateTask9() {
 		String taskTitle = "Invalid Date";
 		String assignee = "Fadi Abuaita";
 		String dueDate = "99/99/9999";
 		projectTask.createTask(taskTitle, dueDate, assignee);
-		Thread.sleep(2000);
+		
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=10)
-	public void CreateTask10() throws InterruptedException {
+	public void CreateTask10() {
 		String taskTitle = "Far Future Date";
 		String assignee = "Fadi Abuaita";
 		String dueDate = "03/20/2036";
 		projectTask.createTask(taskTitle, dueDate, assignee);
-		Thread.sleep(2000);
+		
 		driver.get(BASE_URL + getPath());
 	}
 	

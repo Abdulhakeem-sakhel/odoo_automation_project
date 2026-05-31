@@ -26,7 +26,6 @@ public class LoginPage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(emailInputBy)).sendKeys(email);
         wait.until(ExpectedConditions.visibilityOfElementLocated(passwordInputBy)).sendKeys(password);
         wait.until(ExpectedConditions.visibilityOfElementLocated(loginButtonBy)).click();
-
     }
 
     public boolean isLoggedIn() {

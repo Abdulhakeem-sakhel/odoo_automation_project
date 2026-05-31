@@ -19,7 +19,7 @@ public class ProjectTaskTest extends BaseTest {
 	@Override
 	protected String getPath() {
 		// TODO Auto-generated method stub
-		return "/odoo/project/40/tasks";
+		return "/odoo/project/148/tasks";
 	}
 	
 	@BeforeClass
@@ -65,17 +65,18 @@ public class ProjectTaskTest extends BaseTest {
 	
 	@Test(priority=2)
 	public void CreateTask2() throws InterruptedException {
-		String taskTitle = "Minimal Task";
-		List<String> assignees = Arrays.asList("");
-		String duoDate = "";
-		projectTask.createTask(taskTitle, duoDate, assignees);
+		String taskTitle = "Minimal";
+//		List<String> assignees = Arrays.asList("");
+//		String duoDate = "";
+//		projectTask.createTask(taskTitle, duoDate, assignees);
+		projectTask.createTask(taskTitle);
 		
 		driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=3)
 	public void CreateTask3() throws InterruptedException {
-		String taskTitle = "UrgentTask";
+		String taskTitle = "Urgent";
 		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "05/31/2026";
 		projectTask.createTask(taskTitle, dueDate, assignees);
@@ -85,7 +86,7 @@ public class ProjectTaskTest extends BaseTest {
 	
 	@Test(priority=4)
 	public void CreateTask4() throws InterruptedException {
-		String taskTitle = "Multiple Assignee Task";
+		String taskTitle = "Multiple Assignee";
 		String dueDate = "05/30/2026";
 		List<String> assignees = Arrays.asList("Fadi Abuaita", "Abdulhakeem Sakhel", "Bashar Abuhwila");
 		projectTask.createTask(taskTitle, dueDate, assignees);
@@ -111,7 +112,7 @@ public class ProjectTaskTest extends BaseTest {
 	
 	@Test(priority=6)
 	public void CreateTask6() throws InterruptedException {
-		String taskTitle = "in the Past Task";
+		String taskTitle = "in the Past";
 		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "02/25/2026";
 		projectTask.createTask(taskTitle, dueDate, assignees);
@@ -142,7 +143,7 @@ public class ProjectTaskTest extends BaseTest {
 	
 	@Test(priority=9)
 	public void CreateTask9() throws InterruptedException {
-		String taskTitle = "Invalid Date";
+		String taskTitle = "InvalidDate";
 		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "99/99/9999";
 		projectTask.createTask(taskTitle, dueDate, assignees);
@@ -152,7 +153,7 @@ public class ProjectTaskTest extends BaseTest {
 	
 	@Test(priority=10)
 	public void CreateTask10() throws InterruptedException {
-		String taskTitle = "Far Future Date";
+		String taskTitle = "Far FutureD";
 		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "03/20/2036";
 		projectTask.createTask(taskTitle, dueDate, assignees);

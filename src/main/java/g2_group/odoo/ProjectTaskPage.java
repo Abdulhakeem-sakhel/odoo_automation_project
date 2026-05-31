@@ -27,6 +27,14 @@ public class ProjectTaskPage {
     return new By.ByXPath(String.format("//span[contains(text(), '%s')]", taskTittle));
     }
     
+//    public By getTaskCard(String taskTitle) {
+//        String xpathExpression = String.format(
+//            "//article[contains(@class, 'o_kanban_record')][.//span[contains(@class, 'fw-bold') and normalize-space(text())='%s']]", 
+//            taskTitle
+//        );
+//        return By.xpath(xpathExpression);
+//    }
+    
     
     public ProjectTaskPage(WebDriver driver) {
     	this.driver=driver;
@@ -77,6 +85,20 @@ public class ProjectTaskPage {
     	dateInput.click();
     	dateInput.sendKeys(dueDate+ Keys.ENTER);
     	Thread.sleep(500);
+    }
+    
+    
+    public void createTask(String taskTitle) throws InterruptedException {
+    	wait.until(ExpectedConditions.visibilityOfElementLocated(createNewTaskBtnBy)).click();
+    	wait.until(ExpectedConditions.visibilityOfElementLocated(titleFieldBy)).sendKeys(taskTitle);
+    	wait.until(ExpectedConditions.visibilityOfElementLocated(addTaskBtnBy)).click();
+    	wait.until(ExpectedConditions.visibilityOfElementLocated(getTaskCard(taskTitle))).click();
+    	try {
+            Thread.sleep(2000);
+
+        } catch(Exception e) {
+            
+        }
     }
     
     

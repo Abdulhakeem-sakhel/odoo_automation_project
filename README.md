@@ -46,6 +46,14 @@ odoo/
 │       └── resources/
 │           ├── config.properties.template
 │           └── config.properties          # (git-ignored, you create this)
+│
+├── test-output/                           # TestNG reports (latest run committed for reference)
+│   ├── index.html                         # main report entry point
+│   ├── emailable-report.html
+│   ├── testng-results.xml
+│   ├── OdooTestSuite/                     # per-test HTML/XML reports
+│   └── junitreports/                      # JUnit-style XML reports
+│
 ├── pom.xml
 └── testng.xml                             # TestNG suite definition
 ```

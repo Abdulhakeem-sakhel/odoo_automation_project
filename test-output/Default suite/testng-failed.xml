@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="g2_group.odoo.ProjectTaskTest">
+        <methods>
+          <include name="CreateTask3"/>
+          <include name="CreateTask9"/>
+          <include name="CreateTask5"/>
+          <include name="CreateTask8"/>
+          <include name="CreateTask10"/>
+          <include name="CreateTask7"/>
+          <include name="setUp"/>
+          <include name="startClean"/>
+          <include name="CreateTask2"/>
+          <include name="tearDown"/>
+          <include name="CreateTaskWithWhitespaceTitle"/>
+          <include name="CreateTask1"/>
+          <include name="CreateTask4"/>
+        </methods>
+      </class> <!-- g2_group.odoo.ProjectTaskTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

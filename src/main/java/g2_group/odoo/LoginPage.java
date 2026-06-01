@@ -22,10 +22,22 @@ public class LoginPage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public void loginFromUI(String email, String password) {     
-        wait.until(ExpectedConditions.visibilityOfElementLocated(emailInputBy)).sendKeys(email);
+    private void enterUsername(String email) {
+         wait.until(ExpectedConditions.visibilityOfElementLocated(emailInputBy)).sendKeys(email);
+    }
+
+    private void enterPassword(String password) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(passwordInputBy)).sendKeys(password);
+    }
+
+    private void clickLogin() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(loginButtonBy)).click();
+    }
+
+    public void loginFromUI(String email, String password) {     
+        enterUsername(email);
+        enterPassword(password);
+        clickLogin();
     }
 
     public boolean isLoggedIn() {

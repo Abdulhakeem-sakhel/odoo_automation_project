@@ -38,12 +38,14 @@ public class Workflow_LoginTest extends BaseTest {
     @Test(priority = 2)
     public void TC_LG_02_LoginWithInvalidPassword() {
         loginPage.loginFromUI(email, "WrongPassword123");
+        Assert.assertTrue(loginPage.isErrorMessage());
         Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_02 Failed: Logged in with wrong password.");
     }
 
     @Test(priority = 3)
     public void TC_LG_03_LoginWithInvalidUsername() {
         loginPage.loginFromUI("fakeuser@gmail.com", password);
+        Assert.assertTrue(loginPage.isErrorMessage());
         Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_03 Failed: Logged in with wrong username.");
     }
 
@@ -62,18 +64,21 @@ public class Workflow_LoginTest extends BaseTest {
     @Test(priority = 6)
     public void TC_LG_06_LoginWithCaseSensitivePassword() {
         loginPage.loginFromUI(email, password.toUpperCase());
+        Assert.assertTrue(loginPage.isErrorMessage());
         Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_06 Failed: Password is not case-sensitive.");
     }
 
     @Test(priority = 7)
     public void TC_LG_07_LoginWithExtraWhitespaceInUsername() {
         loginPage.loginFromUI(" ".repeat(3) + email + " ".repeat(5), password);
+        Assert.assertTrue(loginPage.isErrorMessage());
         Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_07 Failed: Allowed login with whitespaces.");
     }
 
     @Test(priority = 8)
     public void TC_LG_08_LoginWithSQLInjectionPayload() {
         loginPage.loginFromUI("' OR '1'='1", password);
+        Assert.assertTrue(loginPage.isErrorMessage());
         Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_08 Failed: System vulnerable to SQL Injection.");
     }
 
@@ -81,6 +86,7 @@ public class Workflow_LoginTest extends BaseTest {
     public void TC_LG_09_LoginWithMaximumCharacterBoundary() {
         String longEmail =  RandomStringUtil.randomString(240) + "@gmail.com";
         loginPage.loginFromUI(longEmail, password);
+        Assert.assertTrue(loginPage.isErrorMessage());
         Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_09 Failed: System allowed login with invalid long boundary email.");
     }
 }

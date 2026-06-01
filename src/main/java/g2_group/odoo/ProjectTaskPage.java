@@ -23,6 +23,7 @@ public class ProjectTaskPage {
     protected By addTaskBtnBy       = new By.ByCssSelector("button.btn.btn-primary.o_kanban_add.me-1");
     protected By dueDateBy 			= new By.ByXPath("//input[@id='date_deadline_0']");
     
+    
     private By getTaskCard(String taskTittle) {
     return new By.ByXPath(String.format("//span[contains(text(), '%s')]", taskTittle));
     }

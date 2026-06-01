@@ -67,19 +67,10 @@ public class ProjectTaskTest extends BaseTest {
 		driver.get(BASE_URL + getPath());
 	}
 	
+	
+	
 	@Test(priority=2)
 	public void CreateTask2() throws InterruptedException {
-		String taskTitle = "Minimal";
-//		List<String> assignees = Arrays.asList("");
-//		String duoDate = "";
-//		projectTask.createTask(taskTitle, duoDate, assignees);
-		projectTask.createTask(taskTitle);
-		
-		driver.get(BASE_URL + getPath());
-	}
-	
-	@Test(priority=3)
-	public void CreateTask3() throws InterruptedException {
 	    String taskTitle = "Urgent";
 	    List<String> assignees = Arrays.asList("Fadi Abuaita");
 	    LocalDate today = LocalDate.now();
@@ -90,8 +81,8 @@ public class ProjectTaskTest extends BaseTest {
 	    driver.get(BASE_URL + getPath());
 	}
 	
-	@Test(priority=4)
-	public void CreateTask4() throws InterruptedException {
+	@Test(priority=3)
+	public void CreateTask3() throws InterruptedException {
 		String taskTitle = "Multiple Assignee";
 		String dueDate = "05/30/2026";
 		List<String> assignees = Arrays.asList("Fadi Abuaita", "Abdulhakeem Sakhel", "Bashar Abuhwila");
@@ -99,8 +90,8 @@ public class ProjectTaskTest extends BaseTest {
 		driver.get(BASE_URL + getPath());
 	}
 	
-	@Test(priority=5)
-	public void CreateTask5() {
+	@Test(priority=4)
+	public void CreateTask4() {
 		
 	    String errorMessage = projectTask.createTaskExpectingFailure();
 	    
@@ -116,8 +107,8 @@ public class ProjectTaskTest extends BaseTest {
 	    }
 	}
 	
-	@Test(priority=6)
-	public void CreateTask6() throws InterruptedException {
+	@Test(priority=5)
+	public void CreateTask5() throws InterruptedException {
 		String taskTitle = "in the Past";
 		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "02/25/2026";
@@ -126,15 +117,15 @@ public class ProjectTaskTest extends BaseTest {
 		driver.get(BASE_URL + getPath());
 	}
 	
-	@Test(priority=7)
+	@Test(priority=6)
 	public void CreateTaskWithWhitespaceTitle() {
 	    String whitespaceTitle = "     "; 
 	    
 	    String errorMessage = projectTask.createTaskWithInvalidTitle(whitespaceTitle);
 	    Assert.assertTrue(errorMessage.contains("Missing required fields"));
 	    
-	    String targetUrl = BASE_URL + getPath();
-	    ((JavascriptExecutor) driver).executeScript("window.location.href='" + targetUrl + "';");
+	    driver.get(BASE_URL + getPath());
+//	    ((JavascriptExecutor) driver).executeScript("window.location.href='" + targetUrl + "';");
 	}
 	
 //	@Test(priority=7)
@@ -154,8 +145,8 @@ public class ProjectTaskTest extends BaseTest {
 //	    ((JavascriptExecutor) driver).executeScript("window.location.href='" + targetUrl + "';");
 //	}
 	
-	@Test(priority=8)
-	public void CreateTask8() throws InterruptedException {
+	@Test(priority=7)
+	public void CreateTask7() throws InterruptedException {
 		String taskTitle = "!@#$%^&**";
 		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "07/25/2026";
@@ -164,8 +155,8 @@ public class ProjectTaskTest extends BaseTest {
 		driver.get(BASE_URL + getPath());
 	}
 	
-	@Test(priority=9)
-	public void CreateTask9() throws InterruptedException {
+	@Test(priority=8)
+	public void CreateTask8() throws InterruptedException {
 		String taskTitle = "InvalidDate";
 		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "99/99/9999";
@@ -174,12 +165,23 @@ public class ProjectTaskTest extends BaseTest {
 		driver.get(BASE_URL + getPath());
 	}
 	
-	@Test(priority=10)
-	public void CreateTask10() throws InterruptedException {
+	@Test(priority=9)
+	public void CreateTask9() throws InterruptedException {
 		String taskTitle = "Far FutureD";
 		List<String> assignees = Arrays.asList("Fadi Abuaita");
 		String dueDate = "03/20/2036";
 		projectTask.createTask(taskTitle, dueDate, assignees);
+		
+		driver.get(BASE_URL + getPath());
+	}
+	
+	@Test(priority=10)
+	public void CreateTask10() throws InterruptedException {
+		String taskTitle = "Minimal";
+//		List<String> assignees = Arrays.asList("");
+//		String duoDate = "";
+//		projectTask.createTask(taskTitle, duoDate, assignees);
+		projectTask.createTask(taskTitle);
 		
 		driver.get(BASE_URL + getPath());
 	}

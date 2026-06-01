@@ -153,5 +153,12 @@ public class ProjectTaskPage {
         
         return text;
     }
+    
+//    public boolean verifyInvalidTitleErrorVisible(String expectedSubString) {
+//        By errorNotificationBy = By.cssSelector(".o_notification_body span.me-auto");
+//        
+//        // This waits until the element is visible AND contains the text you expect
+//        return wait.until(ExpectedConditions.textToBePresentInElementLocated(errorNotificationBy, expectedSubString));
+//    }
 
 }

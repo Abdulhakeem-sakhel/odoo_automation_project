@@ -1,5 +1,7 @@
 package g2_group.odoo;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.List;
 
@@ -22,14 +24,16 @@ public class ProjectTaskTest extends BaseTest {
 		return "/odoo/project/148/tasks";
 	}
 	
-	@BeforeClass
-	public void initializePage() {
-		loginPage = new LoginPage(driver);
-		projectTask = new ProjectTaskPage(driver);
-	}
+//	@BeforeClass
+//	public void initializePage() {
+//		loginPage = new LoginPage(driver);
+//		projectTask = new ProjectTaskPage(driver);
+//	}
 	
 	@BeforeClass
 	public void startClean() {
+		loginPage = new LoginPage(driver);
+		projectTask = new ProjectTaskPage(driver);
 		driver.manage().deleteAllCookies();
 		String email = ConfigReader.getProperty("email");
 		String password = ConfigReader.getProperty("password");
@@ -39,20 +43,20 @@ public class ProjectTaskTest extends BaseTest {
 		driver.get(BASE_URL + getPath());
 	}
 	
-	@AfterMethod
-	public void backToDashboard() {
-	    // 1. Construct the complete destination URL
-	    String destinationUrl = BASE_URL + getPath();
-	    
-	    try {
-	        // 2. Perform standard navigation
-	        driver.get(destinationUrl);
-	    } catch (Exception e) {
-	        // 3. Fallback: If an Odoo validation lock or modal overlay blocks driver.get(),
-	        // JavaScript will forcefully redirect the browser window anyway.
-	        ((JavascriptExecutor) driver).executeScript("window.location.href='" + destinationUrl + "';");
-	    }
-	}
+//	@AfterMethod
+//	public void backToDashboard() {
+//	    // 1. Construct the complete destination URL
+//	    String destinationUrl = BASE_URL + getPath();
+//	    
+//	    try {
+//	        // 2. Perform standard navigation
+//	        driver.get(destinationUrl);
+//	    } catch (Exception e) {
+//	        // 3. Fallback: If an Odoo validation lock or modal overlay blocks driver.get(),
+//	        // JavaScript will forcefully redirect the browser window anyway.
+//	        ((JavascriptExecutor) driver).executeScript("window.location.href='" + destinationUrl + "';");
+//	    }
+//	}
 	
 	@Test(priority=1)
 	public void CreateTask1() throws InterruptedException {
@@ -76,12 +80,14 @@ public class ProjectTaskTest extends BaseTest {
 	
 	@Test(priority=3)
 	public void CreateTask3() throws InterruptedException {
-		String taskTitle = "Urgent";
-		List<String> assignees = Arrays.asList("Fadi Abuaita");
-		String dueDate = "05/31/2026";
-		projectTask.createTask(taskTitle, dueDate, assignees);
-		
-		driver.get(BASE_URL + getPath());
+	    String taskTitle = "Urgent";
+	    List<String> assignees = Arrays.asList("Fadi Abuaita");
+	    LocalDate today = LocalDate.now();
+	    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+	    String dueDate = today.format(formatter);
+	    projectTask.createTask(taskTitle, dueDate, assignees);
+	    
+	    driver.get(BASE_URL + getPath());
 	}
 	
 	@Test(priority=4)
@@ -130,6 +136,23 @@ public class ProjectTaskTest extends BaseTest {
 	    String targetUrl = BASE_URL + getPath();
 	    ((JavascriptExecutor) driver).executeScript("window.location.href='" + targetUrl + "';");
 	}
+	
+//	@Test(priority=7)
+//	public void CreateTaskWithWhitespaceTitle() {
+//	    String whitespaceTitle = "    ";
+//	    
+//	    // 1. Trigger the action
+//	    projectTask.createTaskWithInvalidTitle(whitespaceTitle);
+//	    
+//	    // 2. Assert directly using the new boolean wait helper 
+//	    // (Change "Missing required fields" to the exact string if it differs)
+//	    boolean isErrorCorrect = projectTask.verifyInvalidTitleErrorVisible("Missing required fields");
+//	    Assert.assertTrue(isErrorCorrect, "The expected error message was not displayed!");
+//	    
+//	    // 3. Clear/Redirect
+//	    String targetUrl = BASE_URL + getPath();
+//	    ((JavascriptExecutor) driver).executeScript("window.location.href='" + targetUrl + "';");
+//	}
 	
 	@Test(priority=8)
 	public void CreateTask8() throws InterruptedException {

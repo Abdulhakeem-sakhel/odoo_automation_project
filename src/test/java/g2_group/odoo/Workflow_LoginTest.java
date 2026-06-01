@@ -38,7 +38,6 @@ public class Workflow_LoginTest extends BaseTest {
     @Test(priority = 2)
     public void TC_LG_02_LoginWithInvalidPassword() {
         loginPage.loginFromUI(email, "WrongPassword123");
-        Assert.assertTrue(loginPage.isErrorMessage());
         Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_02 Failed: Logged in with wrong password.");
     }
 

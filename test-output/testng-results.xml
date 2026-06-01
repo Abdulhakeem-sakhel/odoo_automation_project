@@ -1,513 +1,433 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="45" passed="43" failed="2" skipped="0">
+<testng-results ignored="0" total="45" passed="45" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-01T20:20:10 EEST" name="OdooTestSuite" finished-at="2026-06-01T20:26:32 EEST" duration-ms="382284">
+  <suite started-at="2026-06-01T23:51:52 EEST" name="OdooTestSuite" finished-at="2026-06-01T23:58:14 EEST" duration-ms="382500">
     <groups>
     </groups>
-    <test started-at="2026-06-01T20:20:10 EEST" name="ProjectCreationAndConfiguration" finished-at="2026-06-01T20:22:57 EEST" duration-ms="166912">
-      <class name="g2_group.odoo.CreationandConfigurationproject">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:20:10 EEST" name="setUp" finished-at="2026-06-01T20:20:19 EEST" duration-ms="8570" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_01_ProjectCreationWithDynamicName()[pri:1, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:20:19 EEST" name="TC_WF1_01_ProjectCreationWithDynamicName" finished-at="2026-06-01T20:20:25 EEST" duration-ms="5881" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_01_ProjectCreationWithDynamicName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:20:25 EEST" name="tearDown" finished-at="2026-06-01T20:20:25 EEST" duration-ms="145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:20:25 EEST" name="setUp" finished-at="2026-06-01T20:20:33 EEST" duration-ms="8236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_02_ProjectCreationWithBlankNameField()[pri:2, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:20:33 EEST" name="TC_WF1_02_ProjectCreationWithBlankNameField" finished-at="2026-06-01T20:20:39 EEST" duration-ms="5738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_02_ProjectCreationWithBlankNameField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:20:39 EEST" name="tearDown" finished-at="2026-06-01T20:20:39 EEST" duration-ms="171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:20:39 EEST" name="setUp" finished-at="2026-06-01T20:20:48 EEST" duration-ms="9498" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_03_ProjectCreationWithMaximumCharacterLimit()[pri:3, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:20:48 EEST" name="TC_WF1_03_ProjectCreationWithMaximumCharacterLimit" finished-at="2026-06-01T20:20:54 EEST" duration-ms="5982" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_03_ProjectCreationWithMaximumCharacterLimit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:20:54 EEST" name="tearDown" finished-at="2026-06-01T20:20:55 EEST" duration-ms="118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:20:55 EEST" name="setUp" finished-at="2026-06-01T20:21:04 EEST" duration-ms="9570" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols()[pri:4, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:21:04 EEST" name="TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols" finished-at="2026-06-01T20:21:10 EEST" duration-ms="6333" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:21:10 EEST" name="tearDown" finished-at="2026-06-01T20:21:11 EEST" duration-ms="146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:21:11 EEST" name="setUp" finished-at="2026-06-01T20:21:19 EEST" duration-ms="8334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_05_ModifyProjectPrivacyToInvitedUsers()[pri:5, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:21:19 EEST" name="TC_WF1_05_ModifyProjectPrivacyToInvitedUsers" finished-at="2026-06-01T20:21:25 EEST" duration-ms="5754" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_05_ModifyProjectPrivacyToInvitedUsers -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:21:25 EEST" name="tearDown" finished-at="2026-06-01T20:21:25 EEST" duration-ms="124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:21:25 EEST" name="setUp" finished-at="2026-06-01T20:21:33 EEST" duration-ms="8283" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_06_ChangeAssignedProjectManager()[pri:6, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:21:33 EEST" name="TC_WF1_06_ChangeAssignedProjectManager" finished-at="2026-06-01T20:21:39 EEST" duration-ms="5749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_06_ChangeAssignedProjectManager -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:21:39 EEST" name="tearDown" finished-at="2026-06-01T20:21:39 EEST" duration-ms="166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:21:39 EEST" name="setUp" finished-at="2026-06-01T20:21:47 EEST" duration-ms="7929" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_07_EnableTaskDependenciesFeatureInSettings()[pri:7, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:21:47 EEST" name="TC_WF1_07_EnableTaskDependenciesFeatureInSettings" finished-at="2026-06-01T20:21:53 EEST" duration-ms="5792" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_07_EnableTaskDependenciesFeatureInSettings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:21:53 EEST" name="tearDown" finished-at="2026-06-01T20:21:53 EEST" duration-ms="124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:21:53 EEST" name="setUp" finished-at="2026-06-01T20:22:01 EEST" duration-ms="8403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_08_AddClassificationTagsDuringConfiguration()[pri:8, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:01 EEST" name="TC_WF1_08_AddClassificationTagsDuringConfiguration" finished-at="2026-06-01T20:22:07 EEST" duration-ms="5768" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_08_AddClassificationTagsDuringConfiguration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:07 EEST" name="tearDown" finished-at="2026-06-01T20:22:07 EEST" duration-ms="157" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:07 EEST" name="setUp" finished-at="2026-06-01T20:22:15 EEST" duration-ms="8153" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_09_DiscardConfigurationChangesWithoutSaving()[pri:9, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:15 EEST" name="TC_WF1_09_DiscardConfigurationChangesWithoutSaving" finished-at="2026-06-01T20:22:18 EEST" duration-ms="2776" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_09_DiscardConfigurationChangesWithoutSaving -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:18 EEST" name="tearDown" finished-at="2026-06-01T20:22:18 EEST" duration-ms="152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:18 EEST" name="setUp" finished-at="2026-06-01T20:22:27 EEST" duration-ms="8339" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_10_SuccessfulProjectArchivingExecution()[pri:10, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:27 EEST" name="TC_WF1_10_SuccessfulProjectArchivingExecution" finished-at="2026-06-01T20:22:32 EEST" duration-ms="5700" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_10_SuccessfulProjectArchivingExecution -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:32 EEST" name="tearDown" finished-at="2026-06-01T20:22:32 EEST" duration-ms="127" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:32 EEST" name="setUp" finished-at="2026-06-01T20:22:40 EEST" duration-ms="7999" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_11_VerifyArchivedRecordUnderSystemFilters()[pri:11, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:40 EEST" name="TC_WF1_11_VerifyArchivedRecordUnderSystemFilters" finished-at="2026-06-01T20:22:40 EEST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_11_VerifyArchivedRecordUnderSystemFilters -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:40 EEST" name="tearDown" finished-at="2026-06-01T20:22:41 EEST" duration-ms="172" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:41 EEST" name="setUp" finished-at="2026-06-01T20:22:49 EEST" duration-ms="8185" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_12_SuccessfulProjectUnarchivingRestoration()[pri:12, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:49 EEST" name="TC_WF1_12_SuccessfulProjectUnarchivingRestoration" finished-at="2026-06-01T20:22:49 EEST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_12_SuccessfulProjectUnarchivingRestoration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:49 EEST" name="tearDown" finished-at="2026-06-01T20:22:49 EEST" duration-ms="111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:49 EEST" name="setUp" finished-at="2026-06-01T20:22:57 EEST" duration-ms="7980" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_WF1_13_ProjectCleanupAndDeletionProcessing()[pri:13, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:57 EEST" name="TC_WF1_13_ProjectCleanupAndDeletionProcessing" finished-at="2026-06-01T20:22:57 EEST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_WF1_13_ProjectCleanupAndDeletionProcessing -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@22ff4249]" started-at="2026-06-01T20:22:57 EEST" name="tearDown" finished-at="2026-06-01T20:22:57 EEST" duration-ms="166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- g2_group.odoo.CreationandConfigurationproject -->
-    </test> <!-- ProjectCreationAndConfiguration -->
-    <test started-at="2026-06-01T20:22:57 EEST" name="ProjectTask" finished-at="2026-06-01T20:23:52 EEST" duration-ms="55036">
+    <test started-at="2026-06-01T23:51:52 EEST" name="ProjectTask" finished-at="2026-06-01T23:52:50 EEST" duration-ms="58309">
       <class name="g2_group.odoo.ProjectTaskTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:22:57 EEST" name="setUp" finished-at="2026-06-01T20:23:00 EEST" duration-ms="2787" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:51:52 EEST" name="setUp" finished-at="2026-06-01T23:51:55 EEST" duration-ms="3323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:23:00 EEST" name="startClean" finished-at="2026-06-01T20:23:04 EEST" duration-ms="4578" status="PASS">
+        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:51:55 EEST" name="startClean" finished-at="2026-06-01T23:52:00 EEST" duration-ms="4529" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClean -->
-        <test-method signature="CreateTask1()[pri:1, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:23:04 EEST" name="CreateTask1" finished-at="2026-06-01T20:23:11 EEST" duration-ms="6588" status="PASS">
+        <test-method signature="CreateTask1()[pri:1, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:52:00 EEST" name="CreateTask1" finished-at="2026-06-01T23:52:07 EEST" duration-ms="6709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTask1 -->
-        <test-method signature="CreateTask2()[pri:2, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:23:11 EEST" name="CreateTask2" finished-at="2026-06-01T20:23:17 EEST" duration-ms="5519" status="PASS">
+        <test-method signature="CreateTask2()[pri:2, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:52:07 EEST" name="CreateTask2" finished-at="2026-06-01T23:52:12 EEST" duration-ms="5519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTask2 -->
-        <test-method signature="CreateTask3()[pri:3, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:23:17 EEST" name="CreateTask3" finished-at="2026-06-01T20:23:26 EEST" duration-ms="9658" status="PASS">
+        <test-method signature="CreateTask3()[pri:3, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:52:12 EEST" name="CreateTask3" finished-at="2026-06-01T23:52:22 EEST" duration-ms="9714" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTask3 -->
-        <test-method signature="CreateTask4()[pri:4, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:23:26 EEST" name="CreateTask4" finished-at="2026-06-01T20:23:28 EEST" duration-ms="1261" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at g2_group.odoo.ProjectTaskTest.CreateTask4(ProjectTaskTest.java:98)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="CreateTask4()[pri:4, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:52:22 EEST" name="CreateTask4" finished-at="2026-06-01T23:52:23 EEST" duration-ms="1675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTask4 -->
-        <test-method signature="CreateTask5()[pri:5, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:23:28 EEST" name="CreateTask5" finished-at="2026-06-01T20:23:32 EEST" duration-ms="4275" status="PASS">
+        <test-method signature="CreateTask5()[pri:5, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:52:23 EEST" name="CreateTask5" finished-at="2026-06-01T23:52:28 EEST" duration-ms="4947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTask5 -->
-        <test-method signature="CreateTaskWithWhitespaceTitle()[pri:6, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:23:32 EEST" name="CreateTaskWithWhitespaceTitle" finished-at="2026-06-01T20:23:33 EEST" duration-ms="1210" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at g2_group.odoo.ProjectTaskTest.CreateTaskWithWhitespaceTitle(ProjectTaskTest.java:125)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="CreateTaskWithWhitespaceTitle()[pri:6, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:52:28 EEST" name="CreateTaskWithWhitespaceTitle" finished-at="2026-06-01T23:52:30 EEST" duration-ms="1721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTaskWithWhitespaceTitle -->
-        <test-method signature="CreateTask7()[pri:7, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:23:33 EEST" name="CreateTask7" finished-at="2026-06-01T20:23:37 EEST" duration-ms="4241" status="PASS">
+        <test-method signature="CreateTask7()[pri:7, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:52:30 EEST" name="CreateTask7" finished-at="2026-06-01T23:52:35 EEST" duration-ms="4887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTask7 -->
-        <test-method signature="CreateTask8()[pri:8, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:23:37 EEST" name="CreateTask8" finished-at="2026-06-01T20:23:43 EEST" duration-ms="5311" status="PASS">
+        <test-method signature="CreateTask8()[pri:8, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:52:35 EEST" name="CreateTask8" finished-at="2026-06-01T23:52:40 EEST" duration-ms="5400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTask8 -->
-        <test-method signature="CreateTask9()[pri:9, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:23:43 EEST" name="CreateTask9" finished-at="2026-06-01T20:23:48 EEST" duration-ms="5382" status="PASS">
+        <test-method signature="CreateTask9()[pri:9, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:52:40 EEST" name="CreateTask9" finished-at="2026-06-01T23:52:46 EEST" duration-ms="5483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTask9 -->
-        <test-method signature="CreateTask10()[pri:10, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:23:48 EEST" name="CreateTask10" finished-at="2026-06-01T20:23:52 EEST" duration-ms="4023" status="PASS">
+        <test-method signature="CreateTask10()[pri:10, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:52:46 EEST" name="CreateTask10" finished-at="2026-06-01T23:52:50 EEST" duration-ms="4164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTask10 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.ProjectTaskTest@38102d01]" started-at="2026-06-01T20:23:52 EEST" name="tearDown" finished-at="2026-06-01T20:23:52 EEST" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.ProjectTaskTest@4c178a76]" started-at="2026-06-01T23:52:50 EEST" name="tearDown" finished-at="2026-06-01T23:52:50 EEST" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- g2_group.odoo.ProjectTaskTest -->
     </test> <!-- ProjectTask -->
-    <test started-at="2026-06-01T20:23:52 EEST" name="WorkflowLogin" finished-at="2026-06-01T20:25:37 EEST" duration-ms="104691">
-      <class name="g2_group.odoo.Workflow_LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:23:52 EEST" name="setUp" finished-at="2026-06-01T20:23:54 EEST" duration-ms="2306" status="PASS">
+    <test started-at="2026-06-01T23:52:50 EEST" name="ProjectCreationAndConfiguration" finished-at="2026-06-01T23:55:38 EEST" duration-ms="167417">
+      <class name="g2_group.odoo.CreationandConfigurationproject">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:52:50 EEST" name="setUp" finished-at="2026-06-01T23:53:00 EEST" duration-ms="9233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:23:54 EEST" name="initPage" finished-at="2026-06-01T20:23:54 EEST" duration-ms="0" status="PASS">
+        <test-method signature="TC_WF1_01_ProjectCreationWithDynamicName()[pri:1, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:00 EEST" name="TC_WF1_01_ProjectCreationWithDynamicName" finished-at="2026-06-01T23:53:05 EEST" duration-ms="5930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_01_ProjectCreationWithDynamicName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:05 EEST" name="tearDown" finished-at="2026-06-01T23:53:06 EEST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:06 EEST" name="setUp" finished-at="2026-06-01T23:53:14 EEST" duration-ms="8409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_WF1_02_ProjectCreationWithBlankNameField()[pri:2, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:14 EEST" name="TC_WF1_02_ProjectCreationWithBlankNameField" finished-at="2026-06-01T23:53:20 EEST" duration-ms="5867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_02_ProjectCreationWithBlankNameField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:20 EEST" name="tearDown" finished-at="2026-06-01T23:53:20 EEST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:20 EEST" name="setUp" finished-at="2026-06-01T23:53:28 EEST" duration-ms="8415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_WF1_03_ProjectCreationWithMaximumCharacterLimit()[pri:3, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:28 EEST" name="TC_WF1_03_ProjectCreationWithMaximumCharacterLimit" finished-at="2026-06-01T23:53:34 EEST" duration-ms="5955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_03_ProjectCreationWithMaximumCharacterLimit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:34 EEST" name="tearDown" finished-at="2026-06-01T23:53:35 EEST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:35 EEST" name="setUp" finished-at="2026-06-01T23:53:43 EEST" duration-ms="8474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols()[pri:4, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:43 EEST" name="TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols" finished-at="2026-06-01T23:53:49 EEST" duration-ms="5775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:49 EEST" name="tearDown" finished-at="2026-06-01T23:53:49 EEST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:49 EEST" name="setUp" finished-at="2026-06-01T23:53:58 EEST" duration-ms="8973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_WF1_05_ModifyProjectPrivacyToInvitedUsers()[pri:5, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:53:58 EEST" name="TC_WF1_05_ModifyProjectPrivacyToInvitedUsers" finished-at="2026-06-01T23:54:04 EEST" duration-ms="5738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_05_ModifyProjectPrivacyToInvitedUsers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:04 EEST" name="tearDown" finished-at="2026-06-01T23:54:04 EEST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:04 EEST" name="setUp" finished-at="2026-06-01T23:54:12 EEST" duration-ms="8444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_WF1_06_ChangeAssignedProjectManager()[pri:6, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:12 EEST" name="TC_WF1_06_ChangeAssignedProjectManager" finished-at="2026-06-01T23:54:18 EEST" duration-ms="5730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_06_ChangeAssignedProjectManager -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:18 EEST" name="tearDown" finished-at="2026-06-01T23:54:18 EEST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:18 EEST" name="setUp" finished-at="2026-06-01T23:54:27 EEST" duration-ms="8441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_WF1_07_EnableTaskDependenciesFeatureInSettings()[pri:7, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:27 EEST" name="TC_WF1_07_EnableTaskDependenciesFeatureInSettings" finished-at="2026-06-01T23:54:32 EEST" duration-ms="5744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_07_EnableTaskDependenciesFeatureInSettings -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:32 EEST" name="tearDown" finished-at="2026-06-01T23:54:32 EEST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:32 EEST" name="setUp" finished-at="2026-06-01T23:54:41 EEST" duration-ms="8316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_WF1_08_AddClassificationTagsDuringConfiguration()[pri:8, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:41 EEST" name="TC_WF1_08_AddClassificationTagsDuringConfiguration" finished-at="2026-06-01T23:54:46 EEST" duration-ms="5750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_08_AddClassificationTagsDuringConfiguration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:46 EEST" name="tearDown" finished-at="2026-06-01T23:54:47 EEST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:47 EEST" name="setUp" finished-at="2026-06-01T23:54:55 EEST" duration-ms="8239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_WF1_09_DiscardConfigurationChangesWithoutSaving()[pri:9, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:55 EEST" name="TC_WF1_09_DiscardConfigurationChangesWithoutSaving" finished-at="2026-06-01T23:54:58 EEST" duration-ms="2753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_09_DiscardConfigurationChangesWithoutSaving -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:58 EEST" name="tearDown" finished-at="2026-06-01T23:54:58 EEST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:54:58 EEST" name="setUp" finished-at="2026-06-01T23:55:06 EEST" duration-ms="8189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_WF1_10_SuccessfulProjectArchivingExecution()[pri:10, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:55:06 EEST" name="TC_WF1_10_SuccessfulProjectArchivingExecution" finished-at="2026-06-01T23:55:12 EEST" duration-ms="5767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_10_SuccessfulProjectArchivingExecution -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:55:12 EEST" name="tearDown" finished-at="2026-06-01T23:55:12 EEST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:55:12 EEST" name="setUp" finished-at="2026-06-01T23:55:20 EEST" duration-ms="8268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_WF1_11_VerifyArchivedRecordUnderSystemFilters()[pri:11, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:55:20 EEST" name="TC_WF1_11_VerifyArchivedRecordUnderSystemFilters" finished-at="2026-06-01T23:55:20 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_11_VerifyArchivedRecordUnderSystemFilters -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:55:20 EEST" name="tearDown" finished-at="2026-06-01T23:55:20 EEST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:55:20 EEST" name="setUp" finished-at="2026-06-01T23:55:29 EEST" duration-ms="9030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_WF1_12_SuccessfulProjectUnarchivingRestoration()[pri:12, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:55:29 EEST" name="TC_WF1_12_SuccessfulProjectUnarchivingRestoration" finished-at="2026-06-01T23:55:29 EEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_12_SuccessfulProjectUnarchivingRestoration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:55:29 EEST" name="tearDown" finished-at="2026-06-01T23:55:29 EEST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:55:29 EEST" name="setUp" finished-at="2026-06-01T23:55:38 EEST" duration-ms="8142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_WF1_13_ProjectCleanupAndDeletionProcessing()[pri:13, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:55:38 EEST" name="TC_WF1_13_ProjectCleanupAndDeletionProcessing" finished-at="2026-06-01T23:55:38 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_WF1_13_ProjectCleanupAndDeletionProcessing -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.CreationandConfigurationproject@38102d01]" started-at="2026-06-01T23:55:38 EEST" name="tearDown" finished-at="2026-06-01T23:55:38 EEST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- g2_group.odoo.CreationandConfigurationproject -->
+    </test> <!-- ProjectCreationAndConfiguration -->
+    <test started-at="2026-06-01T23:55:38 EEST" name="WorkflowLogin" finished-at="2026-06-01T23:57:16 EEST" duration-ms="98345">
+      <class name="g2_group.odoo.Workflow_LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:55:38 EEST" name="setUp" finished-at="2026-06-01T23:55:40 EEST" duration-ms="2342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:55:40 EEST" name="initPage" finished-at="2026-06-01T23:55:40 EEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:23:54 EEST" name="startClean" finished-at="2026-06-01T20:23:55 EEST" duration-ms="512" status="PASS">
+        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:55:40 EEST" name="startClean" finished-at="2026-06-01T23:55:41 EEST" duration-ms="726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClean -->
-        <test-method signature="TC_LG_01_SuccessfulLogin()[pri:1, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:23:55 EEST" name="TC_LG_01_SuccessfulLogin" finished-at="2026-06-01T20:24:06 EEST" duration-ms="11279" status="PASS">
+        <test-method signature="TC_LG_01_SuccessfulLogin()[pri:1, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:55:41 EEST" name="TC_LG_01_SuccessfulLogin" finished-at="2026-06-01T23:55:45 EEST" duration-ms="3917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LG_01_SuccessfulLogin -->
-        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:24:06 EEST" name="startClean" finished-at="2026-06-01T20:24:07 EEST" duration-ms="333" status="PASS">
+        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:55:45 EEST" name="startClean" finished-at="2026-06-01T23:55:45 EEST" duration-ms="521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClean -->
-        <test-method signature="TC_LG_02_LoginWithInvalidPassword()[pri:2, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:24:07 EEST" name="TC_LG_02_LoginWithInvalidPassword" finished-at="2026-06-01T20:24:18 EEST" duration-ms="11091" status="PASS">
+        <test-method signature="TC_LG_02_LoginWithInvalidPassword()[pri:2, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:55:45 EEST" name="TC_LG_02_LoginWithInvalidPassword" finished-at="2026-06-01T23:55:56 EEST" duration-ms="10672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LG_02_LoginWithInvalidPassword -->
-        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:24:18 EEST" name="startClean" finished-at="2026-06-01T20:24:18 EEST" duration-ms="528" status="PASS">
+        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:55:56 EEST" name="startClean" finished-at="2026-06-01T23:55:56 EEST" duration-ms="515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClean -->
-        <test-method signature="TC_LG_03_LoginWithInvalidUsername()[pri:3, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:24:18 EEST" name="TC_LG_03_LoginWithInvalidUsername" finished-at="2026-06-01T20:24:29 EEST" duration-ms="10849" status="PASS">
+        <test-method signature="TC_LG_03_LoginWithInvalidUsername()[pri:3, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:55:56 EEST" name="TC_LG_03_LoginWithInvalidUsername" finished-at="2026-06-01T23:56:07 EEST" duration-ms="10921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LG_03_LoginWithInvalidUsername -->
-        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:24:29 EEST" name="startClean" finished-at="2026-06-01T20:24:30 EEST" duration-ms="521" status="PASS">
+        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:56:07 EEST" name="startClean" finished-at="2026-06-01T23:56:08 EEST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClean -->
-        <test-method signature="TC_LG_04_LoginWithBlankFields()[pri:4, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:24:30 EEST" name="TC_LG_04_LoginWithBlankFields" finished-at="2026-06-01T20:24:40 EEST" duration-ms="10386" status="PASS">
+        <test-method signature="TC_LG_04_LoginWithBlankFields()[pri:4, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:56:08 EEST" name="TC_LG_04_LoginWithBlankFields" finished-at="2026-06-01T23:56:18 EEST" duration-ms="10652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LG_04_LoginWithBlankFields -->
-        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:24:40 EEST" name="startClean" finished-at="2026-06-01T20:24:40 EEST" duration-ms="511" status="PASS">
+        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:56:18 EEST" name="startClean" finished-at="2026-06-01T23:56:19 EEST" duration-ms="526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClean -->
-        <test-method signature="TC_LG_05_LoginWithBlankPasswordOnly()[pri:5, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:24:40 EEST" name="TC_LG_05_LoginWithBlankPasswordOnly" finished-at="2026-06-01T20:24:51 EEST" duration-ms="10441" status="PASS">
+        <test-method signature="TC_LG_05_LoginWithBlankPasswordOnly()[pri:5, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:56:19 EEST" name="TC_LG_05_LoginWithBlankPasswordOnly" finished-at="2026-06-01T23:56:29 EEST" duration-ms="10426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LG_05_LoginWithBlankPasswordOnly -->
-        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:24:51 EEST" name="startClean" finished-at="2026-06-01T20:24:51 EEST" duration-ms="523" status="PASS">
+        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:56:29 EEST" name="startClean" finished-at="2026-06-01T23:56:29 EEST" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClean -->
-        <test-method signature="TC_LG_06_LoginWithCaseSensitivePassword()[pri:6, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:24:51 EEST" name="TC_LG_06_LoginWithCaseSensitivePassword" finished-at="2026-06-01T20:25:02 EEST" duration-ms="11045" status="PASS">
+        <test-method signature="TC_LG_06_LoginWithCaseSensitivePassword()[pri:6, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:56:29 EEST" name="TC_LG_06_LoginWithCaseSensitivePassword" finished-at="2026-06-01T23:56:41 EEST" duration-ms="11396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LG_06_LoginWithCaseSensitivePassword -->
-        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:25:02 EEST" name="startClean" finished-at="2026-06-01T20:25:03 EEST" duration-ms="266" status="PASS">
+        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:56:41 EEST" name="startClean" finished-at="2026-06-01T23:56:42 EEST" duration-ms="860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClean -->
-        <test-method signature="TC_LG_07_LoginWithExtraWhitespaceInUsername()[pri:7, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:25:03 EEST" name="TC_LG_07_LoginWithExtraWhitespaceInUsername" finished-at="2026-06-01T20:25:14 EEST" duration-ms="11030" status="PASS">
+        <test-method signature="TC_LG_07_LoginWithExtraWhitespaceInUsername()[pri:7, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:56:42 EEST" name="TC_LG_07_LoginWithExtraWhitespaceInUsername" finished-at="2026-06-01T23:56:53 EEST" duration-ms="10974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LG_07_LoginWithExtraWhitespaceInUsername -->
-        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:25:14 EEST" name="startClean" finished-at="2026-06-01T20:25:14 EEST" duration-ms="521" status="PASS">
+        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:56:53 EEST" name="startClean" finished-at="2026-06-01T23:56:53 EEST" duration-ms="531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClean -->
-        <test-method signature="TC_LG_08_LoginWithSQLInjectionPayload()[pri:8, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:25:14 EEST" name="TC_LG_08_LoginWithSQLInjectionPayload" finished-at="2026-06-01T20:25:25 EEST" duration-ms="10965" status="PASS">
+        <test-method signature="TC_LG_08_LoginWithSQLInjectionPayload()[pri:8, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:56:53 EEST" name="TC_LG_08_LoginWithSQLInjectionPayload" finished-at="2026-06-01T23:57:04 EEST" duration-ms="10988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LG_08_LoginWithSQLInjectionPayload -->
-        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:25:25 EEST" name="startClean" finished-at="2026-06-01T20:25:26 EEST" duration-ms="264" status="PASS">
+        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:57:04 EEST" name="startClean" finished-at="2026-06-01T23:57:05 EEST" duration-ms="534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClean -->
-        <test-method signature="TC_LG_09_LoginWithMaximumCharacterBoundary()[pri:9, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:25:26 EEST" name="TC_LG_09_LoginWithMaximumCharacterBoundary" finished-at="2026-06-01T20:25:37 EEST" duration-ms="11175" status="PASS">
+        <test-method signature="TC_LG_09_LoginWithMaximumCharacterBoundary()[pri:9, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:57:05 EEST" name="TC_LG_09_LoginWithMaximumCharacterBoundary" finished-at="2026-06-01T23:57:16 EEST" duration-ms="11159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LG_09_LoginWithMaximumCharacterBoundary -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T20:25:37 EEST" name="tearDown" finished-at="2026-06-01T20:25:37 EEST" duration-ms="123" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.Workflow_LoginTest@762ef0ea]" started-at="2026-06-01T23:57:16 EEST" name="tearDown" finished-at="2026-06-01T23:57:16 EEST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- g2_group.odoo.Workflow_LoginTest -->
     </test> <!-- WorkflowLogin -->
-    <test started-at="2026-06-01T20:25:37 EEST" name="AllTasksPage" finished-at="2026-06-01T20:26:32 EEST" duration-ms="55613">
+    <test started-at="2026-06-01T23:57:16 EEST" name="AllTasksPage" finished-at="2026-06-01T23:58:14 EEST" duration-ms="58400">
       <class name="g2_group.odoo.AllTasksPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:37 EEST" name="setUp" finished-at="2026-06-01T20:25:40 EEST" duration-ms="2752" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:16 EEST" name="setUp" finished-at="2026-06-01T23:57:19 EEST" duration-ms="2769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:40 EEST" name="initPages" finished-at="2026-06-01T20:25:40 EEST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initPages()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:19 EEST" name="initPages" finished-at="2026-06-01T23:57:19 EEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPages -->
-        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:40 EEST" name="startClean" finished-at="2026-06-01T20:25:44 EEST" duration-ms="4657" status="PASS">
+        <test-method is-config="true" signature="startClean()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:19 EEST" name="startClean" finished-at="2026-06-01T23:57:24 EEST" duration-ms="4735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClean -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:44 EEST" name="clearSearchBox" finished-at="2026-06-01T20:25:46 EEST" duration-ms="1579" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:24 EEST" name="clearSearchBox" finished-at="2026-06-01T23:57:25 EEST" duration-ms="1634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="SearchingGroupingFiltering()[pri:1, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:46 EEST" name="SearchingGroupingFiltering" finished-at="2026-06-01T20:25:47 EEST" duration-ms="1601" status="PASS">
+        <test-method signature="SearchingGroupingFiltering()[pri:1, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:25 EEST" name="SearchingGroupingFiltering" finished-at="2026-06-01T23:57:27 EEST" duration-ms="1344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchingGroupingFiltering -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:47 EEST" name="clearSearchBox" finished-at="2026-06-01T20:25:48 EEST" duration-ms="885" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:27 EEST" name="clearSearchBox" finished-at="2026-06-01T23:57:27 EEST" duration-ms="912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="searchingForTask()[pri:2, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:48 EEST" name="searchingForTask" finished-at="2026-06-01T20:25:49 EEST" duration-ms="648" status="PASS">
+        <test-method signature="searchingForTask()[pri:2, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:27 EEST" name="searchingForTask" finished-at="2026-06-01T23:57:28 EEST" duration-ms="655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchingForTask -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:49 EEST" name="clearSearchBox" finished-at="2026-06-01T20:25:50 EEST" duration-ms="909" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:28 EEST" name="clearSearchBox" finished-at="2026-06-01T23:57:29 EEST" duration-ms="1188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="multipleFilters()[pri:3, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:50 EEST" name="multipleFilters" finished-at="2026-06-01T20:25:51 EEST" duration-ms="839" status="PASS">
+        <test-method signature="multipleFilters()[pri:3, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:29 EEST" name="multipleFilters" finished-at="2026-06-01T23:57:30 EEST" duration-ms="1096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleFilters -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:51 EEST" name="clearSearchBox" finished-at="2026-06-01T20:25:52 EEST" duration-ms="868" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:30 EEST" name="clearSearchBox" finished-at="2026-06-01T23:57:31 EEST" duration-ms="926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="multipleSearchTerms()[pri:4, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:52 EEST" name="multipleSearchTerms" finished-at="2026-06-01T20:25:52 EEST" duration-ms="755" status="PASS">
+        <test-method signature="multipleSearchTerms()[pri:4, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:31 EEST" name="multipleSearchTerms" finished-at="2026-06-01T23:57:32 EEST" duration-ms="824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSearchTerms -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:52 EEST" name="clearSearchBox" finished-at="2026-06-01T20:25:53 EEST" duration-ms="912" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:32 EEST" name="clearSearchBox" finished-at="2026-06-01T23:57:33 EEST" duration-ms="945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="multipleGrouping()[pri:5, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:53 EEST" name="multipleGrouping" finished-at="2026-06-01T20:25:56 EEST" duration-ms="2355" status="PASS">
+        <test-method signature="multipleGrouping()[pri:5, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:33 EEST" name="multipleGrouping" finished-at="2026-06-01T23:57:36 EEST" duration-ms="2609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleGrouping -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:56 EEST" name="clearSearchBox" finished-at="2026-06-01T20:25:57 EEST" duration-ms="935" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:36 EEST" name="clearSearchBox" finished-at="2026-06-01T23:57:37 EEST" duration-ms="987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="saveSearchFave()[pri:6, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:57 EEST" name="saveSearchFave" finished-at="2026-06-01T20:25:58 EEST" duration-ms="1639" status="PASS">
+        <test-method signature="saveSearchFave()[pri:6, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:37 EEST" name="saveSearchFave" finished-at="2026-06-01T23:57:39 EEST" duration-ms="1866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveSearchFave -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:25:58 EEST" name="clearSearchBox" finished-at="2026-06-01T20:26:00 EEST" duration-ms="1434" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:39 EEST" name="clearSearchBox" finished-at="2026-06-01T23:57:40 EEST" duration-ms="1389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="searchingRandomLetter()[pri:7, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:00 EEST" name="searchingRandomLetter" finished-at="2026-06-01T20:26:00 EEST" duration-ms="615" status="PASS">
+        <test-method signature="searchingRandomLetter()[pri:7, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:40 EEST" name="searchingRandomLetter" finished-at="2026-06-01T23:57:41 EEST" duration-ms="636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchingRandomLetter -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:00 EEST" name="clearSearchBox" finished-at="2026-06-01T20:26:01 EEST" duration-ms="886" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:41 EEST" name="clearSearchBox" finished-at="2026-06-01T23:57:41 EEST" duration-ms="925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="filteringItemThatDoesNotExist()[pri:8, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:01 EEST" name="filteringItemThatDoesNotExist" finished-at="2026-06-01T20:26:02 EEST" duration-ms="867" status="PASS">
+        <test-method signature="filteringItemThatDoesNotExist()[pri:8, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:41 EEST" name="filteringItemThatDoesNotExist" finished-at="2026-06-01T23:57:42 EEST" duration-ms="967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filteringItemThatDoesNotExist -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:02 EEST" name="clearSearchBox" finished-at="2026-06-01T20:26:03 EEST" duration-ms="895" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:42 EEST" name="clearSearchBox" finished-at="2026-06-01T23:57:43 EEST" duration-ms="919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="groupingEmptyResult()[pri:9, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:03 EEST" name="groupingEmptyResult" finished-at="2026-06-01T20:26:04 EEST" duration-ms="828" status="PASS">
+        <test-method signature="groupingEmptyResult()[pri:9, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:43 EEST" name="groupingEmptyResult" finished-at="2026-06-01T23:57:44 EEST" duration-ms="973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- groupingEmptyResult -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:04 EEST" name="clearSearchBox" finished-at="2026-06-01T20:26:05 EEST" duration-ms="893" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:44 EEST" name="clearSearchBox" finished-at="2026-06-01T23:57:45 EEST" duration-ms="885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="searchCaseInsensitive()[pri:10, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:05 EEST" name="searchCaseInsensitive" finished-at="2026-06-01T20:26:05 EEST" duration-ms="649" status="PASS">
+        <test-method signature="searchCaseInsensitive()[pri:10, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:45 EEST" name="searchCaseInsensitive" finished-at="2026-06-01T23:57:46 EEST" duration-ms="659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchCaseInsensitive -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:05 EEST" name="clearSearchBox" finished-at="2026-06-01T20:26:06 EEST" duration-ms="895" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:46 EEST" name="clearSearchBox" finished-at="2026-06-01T23:57:47 EEST" duration-ms="943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="handleExtraSpace()[pri:11, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:06 EEST" name="handleExtraSpace" finished-at="2026-06-01T20:26:07 EEST" duration-ms="651" status="PASS">
+        <test-method signature="handleExtraSpace()[pri:11, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:47 EEST" name="handleExtraSpace" finished-at="2026-06-01T23:57:48 EEST" duration-ms="662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleExtraSpace -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:07 EEST" name="clearSearchBox" finished-at="2026-06-01T20:26:08 EEST" duration-ms="909" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:48 EEST" name="clearSearchBox" finished-at="2026-06-01T23:57:48 EEST" duration-ms="948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="longSearchTaskName()[pri:12, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:08 EEST" name="longSearchTaskName" finished-at="2026-06-01T20:26:20 EEST" duration-ms="12294" status="PASS">
+        <test-method signature="longSearchTaskName()[pri:12, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:57:48 EEST" name="longSearchTaskName" finished-at="2026-06-01T23:58:02 EEST" duration-ms="13767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- longSearchTaskName -->
-        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:20 EEST" name="clearSearchBox" finished-at="2026-06-01T20:26:21 EEST" duration-ms="1392" status="PASS">
+        <test-method is-config="true" signature="clearSearchBox()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:58:02 EEST" name="clearSearchBox" finished-at="2026-06-01T23:58:03 EEST" duration-ms="1180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearSearchBox -->
-        <test-method signature="simpleScriptInjection()[pri:13, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:21 EEST" name="simpleScriptInjection" finished-at="2026-06-01T20:26:32 EEST" duration-ms="10923" status="PASS">
+        <test-method signature="simpleScriptInjection()[pri:13, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:58:03 EEST" name="simpleScriptInjection" finished-at="2026-06-01T23:58:14 EEST" duration-ms="10906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- simpleScriptInjection -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T20:26:32 EEST" name="tearDown" finished-at="2026-06-01T20:26:32 EEST" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:g2_group.odoo.AllTasksPageTest@6a2b953e]" started-at="2026-06-01T23:58:14 EEST" name="tearDown" finished-at="2026-06-01T23:58:14 EEST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

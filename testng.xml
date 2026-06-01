@@ -2,9 +2,9 @@
 <suite name="OdooTestSuite" verbose="1">
     <test name="OdooTests">
         <classes>
-            <class name="g2_group.odoo.LoginTest"/>
             <class name="g2_group.odoo.CreationandConfigurationproject"/>
             <class name="g2_group.odoo.ProjectTaskTest"/>
+            <class name="g2_group.odoo.Workflow_LoginTest"/>
             <class name="g2_group.odoo.AllTasksPageTest"/>
         </classes>
     </test>

@@ -1,11 +1,28 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="OdooTestSuite" verbose="1">
-    <test name="OdooTests">
+
+    <test name="ProjectCreationAndConfiguration">
         <classes>
             <class name="g2_group.odoo.CreationandConfigurationproject"/>
+        </classes>
+    </test>
+
+    <test name="ProjectTask">
+        <classes>
             <class name="g2_group.odoo.ProjectTaskTest"/>
+        </classes>
+    </test>
+
+    <test name="WorkflowLogin">
+        <classes>
             <class name="g2_group.odoo.Workflow_LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="AllTasksPage">
+        <classes>
             <class name="g2_group.odoo.AllTasksPageTest"/>
         </classes>
     </test>
+
 </suite>

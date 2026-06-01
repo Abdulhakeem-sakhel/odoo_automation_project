@@ -1,0 +1,386 @@
+<html>
+<head>
+<title>TestNG:  OdooTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>OdooTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>43/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 01 20:06:27 EEST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>391 seconds (391492 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='g2_group.odoo.ProjectTaskTest.CreateTask4()'><b>CreateTask4</b><br>Test class: g2_group.odoo.ProjectTaskTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at g2_group.odoo.ProjectTaskTest.CreateTask4(ProjectTaskTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace798874225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace798874225'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at g2_group.odoo.ProjectTaskTest.CreateTask4(ProjectTaskTest.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>g2_group.odoo.ProjectTaskTest@4e50c791</td></tr>
+<tr>
+<td title='g2_group.odoo.ProjectTaskTest.CreateTaskWithWhitespaceTitle()'><b>CreateTaskWithWhitespaceTitle</b><br>Test class: g2_group.odoo.ProjectTaskTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at g2_group.odoo.ProjectTaskTest.CreateTaskWithWhitespaceTitle(ProjectTaskTest.java:125)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1631143060", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1631143060'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at g2_group.odoo.ProjectTaskTest.CreateTaskWithWhitespaceTitle(ProjectTaskTest.java:125)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>g2_group.odoo.ProjectTaskTest@4e50c791</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='g2_group.odoo.Workflow_LoginTest.TC_LG_04_LoginWithBlankFields()'><b>TC_LG_04_LoginWithBlankFields</b><br>Test class: g2_group.odoo.Workflow_LoginTest</td>
+<td></td>
+<td>10</td>
+<td>g2_group.odoo.Workflow_LoginTest@58a9760d</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.searchingRandomLetter()'><b>searchingRandomLetter</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>0</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.searchCaseInsensitive()'><b>searchCaseInsensitive</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>0</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.longSearchTaskName()'><b>longSearchTaskName</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>24</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.ProjectTaskTest.CreateTask10()'><b>CreateTask10</b><br>Test class: g2_group.odoo.ProjectTaskTest</td>
+<td></td>
+<td>4</td>
+<td>g2_group.odoo.ProjectTaskTest@4e50c791</td></tr>
+<tr>
+<td title='g2_group.odoo.Workflow_LoginTest.TC_LG_06_LoginWithCaseSensitivePassword()'><b>TC_LG_06_LoginWithCaseSensitivePassword</b><br>Test class: g2_group.odoo.Workflow_LoginTest</td>
+<td></td>
+<td>11</td>
+<td>g2_group.odoo.Workflow_LoginTest@58a9760d</td></tr>
+<tr>
+<td title='g2_group.odoo.ProjectTaskTest.CreateTask5()'><b>CreateTask5</b><br>Test class: g2_group.odoo.ProjectTaskTest</td>
+<td></td>
+<td>4</td>
+<td>g2_group.odoo.ProjectTaskTest@4e50c791</td></tr>
+<tr>
+<td title='g2_group.odoo.Workflow_LoginTest.TC_LG_09_LoginWithMaximumCharacterBoundary()'><b>TC_LG_09_LoginWithMaximumCharacterBoundary</b><br>Test class: g2_group.odoo.Workflow_LoginTest</td>
+<td></td>
+<td>11</td>
+<td>g2_group.odoo.Workflow_LoginTest@58a9760d</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_03_ProjectCreationWithMaximumCharacterLimit()'><b>TC_WF1_03_ProjectCreationWithMaximumCharacterLimit</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>5</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.ProjectTaskTest.CreateTask2()'><b>CreateTask2</b><br>Test class: g2_group.odoo.ProjectTaskTest</td>
+<td></td>
+<td>5</td>
+<td>g2_group.odoo.ProjectTaskTest@4e50c791</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_13_ProjectCleanupAndDeletionProcessing()'><b>TC_WF1_13_ProjectCleanupAndDeletionProcessing</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>0</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_07_EnableTaskDependenciesFeatureInSettings()'><b>TC_WF1_07_EnableTaskDependenciesFeatureInSettings</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>5</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_08_AddClassificationTagsDuringConfiguration()'><b>TC_WF1_08_AddClassificationTagsDuringConfiguration</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>5</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.Workflow_LoginTest.TC_LG_02_LoginWithInvalidPassword()'><b>TC_LG_02_LoginWithInvalidPassword</b><br>Test class: g2_group.odoo.Workflow_LoginTest</td>
+<td></td>
+<td>10</td>
+<td>g2_group.odoo.Workflow_LoginTest@58a9760d</td></tr>
+<tr>
+<td title='g2_group.odoo.Workflow_LoginTest.TC_LG_08_LoginWithSQLInjectionPayload()'><b>TC_LG_08_LoginWithSQLInjectionPayload</b><br>Test class: g2_group.odoo.Workflow_LoginTest</td>
+<td></td>
+<td>10</td>
+<td>g2_group.odoo.Workflow_LoginTest@58a9760d</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_10_SuccessfulProjectArchivingExecution()'><b>TC_WF1_10_SuccessfulProjectArchivingExecution</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>5</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_05_ModifyProjectPrivacyToInvitedUsers()'><b>TC_WF1_05_ModifyProjectPrivacyToInvitedUsers</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>5</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.Workflow_LoginTest.TC_LG_07_LoginWithExtraWhitespaceInUsername()'><b>TC_LG_07_LoginWithExtraWhitespaceInUsername</b><br>Test class: g2_group.odoo.Workflow_LoginTest</td>
+<td></td>
+<td>10</td>
+<td>g2_group.odoo.Workflow_LoginTest@58a9760d</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_06_ChangeAssignedProjectManager()'><b>TC_WF1_06_ChangeAssignedProjectManager</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>5</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.multipleSearchTerms()'><b>multipleSearchTerms</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>0</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.groupingEmptyResult()'><b>groupingEmptyResult</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>0</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.simpleScriptInjection()'><b>simpleScriptInjection</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>11</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.Workflow_LoginTest.TC_LG_01_SuccessfulLogin()'><b>TC_LG_01_SuccessfulLogin</b><br>Test class: g2_group.odoo.Workflow_LoginTest</td>
+<td></td>
+<td>4</td>
+<td>g2_group.odoo.Workflow_LoginTest@58a9760d</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.SearchingGroupingFiltering()'><b>SearchingGroupingFiltering</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>1</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols()'><b>TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>5</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.Workflow_LoginTest.TC_LG_05_LoginWithBlankPasswordOnly()'><b>TC_LG_05_LoginWithBlankPasswordOnly</b><br>Test class: g2_group.odoo.Workflow_LoginTest</td>
+<td></td>
+<td>10</td>
+<td>g2_group.odoo.Workflow_LoginTest@58a9760d</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.saveSearchFave()'><b>saveSearchFave</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>1</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.ProjectTaskTest.CreateTask3()'><b>CreateTask3</b><br>Test class: g2_group.odoo.ProjectTaskTest</td>
+<td></td>
+<td>9</td>
+<td>g2_group.odoo.ProjectTaskTest@4e50c791</td></tr>
+<tr>
+<td title='g2_group.odoo.ProjectTaskTest.CreateTask9()'><b>CreateTask9</b><br>Test class: g2_group.odoo.ProjectTaskTest</td>
+<td></td>
+<td>6</td>
+<td>g2_group.odoo.ProjectTaskTest@4e50c791</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_12_SuccessfulProjectUnarchivingRestoration()'><b>TC_WF1_12_SuccessfulProjectUnarchivingRestoration</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>0</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_09_DiscardConfigurationChangesWithoutSaving()'><b>TC_WF1_09_DiscardConfigurationChangesWithoutSaving</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>2</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.ProjectTaskTest.CreateTask7()'><b>CreateTask7</b><br>Test class: g2_group.odoo.ProjectTaskTest</td>
+<td></td>
+<td>4</td>
+<td>g2_group.odoo.ProjectTaskTest@4e50c791</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_11_VerifyArchivedRecordUnderSystemFilters()'><b>TC_WF1_11_VerifyArchivedRecordUnderSystemFilters</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>0</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.Workflow_LoginTest.TC_LG_03_LoginWithInvalidUsername()'><b>TC_LG_03_LoginWithInvalidUsername</b><br>Test class: g2_group.odoo.Workflow_LoginTest</td>
+<td></td>
+<td>10</td>
+<td>g2_group.odoo.Workflow_LoginTest@58a9760d</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.filteringItemThatDoesNotExist()'><b>filteringItemThatDoesNotExist</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>1</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.searchingForTask()'><b>searchingForTask</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>0</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.multipleGrouping()'><b>multipleGrouping</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>2</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.handleExtraSpace()'><b>handleExtraSpace</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>0</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.AllTasksPageTest.multipleFilters()'><b>multipleFilters</b><br>Test class: g2_group.odoo.AllTasksPageTest</td>
+<td></td>
+<td>1</td>
+<td>g2_group.odoo.AllTasksPageTest@71e9ddb4</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_01_ProjectCreationWithDynamicName()'><b>TC_WF1_01_ProjectCreationWithDynamicName</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>5</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.CreationandConfigurationproject.TC_WF1_02_ProjectCreationWithBlankNameField()'><b>TC_WF1_02_ProjectCreationWithBlankNameField</b><br>Test class: g2_group.odoo.CreationandConfigurationproject</td>
+<td></td>
+<td>5</td>
+<td>g2_group.odoo.CreationandConfigurationproject@9d5509a</td></tr>
+<tr>
+<td title='g2_group.odoo.ProjectTaskTest.CreateTask1()'><b>CreateTask1</b><br>Test class: g2_group.odoo.ProjectTaskTest</td>
+<td></td>
+<td>7</td>
+<td>g2_group.odoo.ProjectTaskTest@4e50c791</td></tr>
+<tr>
+<td title='g2_group.odoo.ProjectTaskTest.CreateTask8()'><b>CreateTask8</b><br>Test class: g2_group.odoo.ProjectTaskTest</td>
+<td></td>
+<td>5</td>
+<td>g2_group.odoo.ProjectTaskTest@4e50c791</td></tr>
+</table><p>
+</body>
+</html>

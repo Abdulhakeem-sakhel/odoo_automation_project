@@ -1,0 +1,10 @@
+scenarioId,email,password,expectError,expectLogin,description
+TC_LG_01,{EMAIL},{PASSWORD},false,true,Successful login with valid credentials
+TC_LG_02,{EMAIL},WrongPassword123,false,false,Login with invalid password
+TC_LG_03,fakeuser@gmail.com,{PASSWORD},true,false,Login with invalid username
+TC_LG_04,,,false,false,Login with blank fields
+TC_LG_05,{EMAIL},,false,false,Login with blank password only
+TC_LG_06,{EMAIL},{PASSWORD_UPPER},true,false,Login with case-sensitive (uppercase) password
+TC_LG_07,{EMAIL_PADDED},{PASSWORD},true,false,Login with extra whitespace in username
+TC_LG_08,' OR '1'='1,{PASSWORD},true,false,Login with SQL injection payload
+TC_LG_09,{LONG_EMAIL},{PASSWORD},true,false,Login with maximum character boundary email

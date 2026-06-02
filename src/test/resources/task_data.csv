@@ -1,0 +1,11 @@
+scenarioId,taskTitle,assignees,dueDate,expectedBehavior
+1,All Positive,Fadi Abuaita,07/25/2026,NORMAL
+2,Urgent,Fadi Abuaita,TODAY,NORMAL
+3,Multiple Assignee,Fadi Abuaita;Abdulhakeem Sakhel;Bashar Abuhwila,05/30/2026,NORMAL
+4,Empty fields,, ,EXPECT_FAILURE
+5,in the Past,Fadi Abuaita,02/25/2026,NORMAL
+6,     ,, ,EXPECT_INVALID_TITLE
+7,!@#$%^&**,Fadi Abuaita,07/25/2026,NORMAL
+8,InvalidDate,Fadi Abuaita,99/99/9999,NORMAL
+9,Far FutureD,Fadi Abuaita,03/20/2036,NORMAL
+10,Minimal,, ,TITLE_ONLY

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-OdooTestSuite" class="navigator-link">
-              <span class="suite-name border-passed">OdooTestSuite</span>
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-OdooTestSuite" class="navigator-link ">
-                    <span>C:\Users\ASUS\eclipse-workspace\odoo\testng.xml</span>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\Mega\AppData\Local\Temp\testng-eclipse-25567680\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-OdooTestSuite" class="navigator-link ">
-                    <span class="test-stats">4 tests</span>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-OdooTestSuite" class="navigator-link ">
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-OdooTestSuite" class="navigator-link ">
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-OdooTestSuite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-OdooTestSuite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-OdooTestSuite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,241 +92,75 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">45 methods,   45 passed</span>
+                    <span class="method-stats">10 methods, 2 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="executeTaskTests(4, Empty fields, [], , EXPECT_FAILURE)">executeTaskTests(4, Empty fields, [], , EXPECT_FAILURE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="executeTaskTests(8, InvalidDate, [Fadi Abuaita], 99/99/9999, NORMAL)">executeTaskTests(8, InvalidDate, [Fadi Abuaita], 99/99/9999, NORMAL)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-OdooTestSuite" class="hide-methods passed suite-OdooTestSuite"> (hide)</a> <!-- hide-methods passed suite-OdooTestSuite -->
-                      <a href="#" panel-name="suite-OdooTestSuite" class="show-methods passed suite-OdooTestSuite"> (show)</a> <!-- show-methods passed suite-OdooTestSuite -->
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-OdooTestSuite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="CreateTask1">CreateTask1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="executeTaskTests(2, Urgent, [Fadi Abuaita], 06/02/2026, NORMAL)">executeTaskTests(2, Urgent, [Fadi Abuaita], 06/02/2026, NORMAL)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="CreateTask10">CreateTask10</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="executeTaskTests(10, Minimal, [], , TITLE_ONLY)">executeTaskTests(10, Minimal, [], , TITLE_ONLY)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="CreateTask2">CreateTask2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="executeTaskTests(6,      , [], , EXPECT_INVALID_TITLE)">executeTaskTests(6,      , [], , EXPECT_INVALID_TITLE)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="CreateTask3">CreateTask3</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="executeTaskTests(3, Multiple Assignee, [Fadi Abuaita, Abdulhakeem Sakhel, Bashar Abuhwila], 05/30/2026, NORMAL)">executeTaskTests(3, Multiple Assignee, [Fadi Abuaita, Abdulhakeem Sakhel, Bashar Abuhwila], 05/30/2026, NORMAL)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="CreateTask4">CreateTask4</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="executeTaskTests(5, in the Past, [Fadi Abuaita], 02/25/2026, NORMAL)">executeTaskTests(5, in the Past, [Fadi Abuaita], 02/25/2026, NORMAL)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="CreateTask5">CreateTask5</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="executeTaskTests(7, !@#$%^&amp;**, [Fadi Abuaita], 07/25/2026, NORMAL)">executeTaskTests(7, !@#$%^&**, [Fadi Abuaita], 07/25/2026, NORMAL)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="CreateTask7">CreateTask7</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="executeTaskTests(1, All Positive, [Fadi Abuaita], 07/25/2026, NORMAL)">executeTaskTests(1, All Positive, [Fadi Abuaita], 07/25/2026, NORMAL)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="CreateTask8">CreateTask8</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="executeTaskTests(9, Far FutureD, [Fadi Abuaita], 03/20/2036, NORMAL)">executeTaskTests(9, Far FutureD, [Fadi Abuaita], 03/20/2036, NORMAL)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="CreateTask9">CreateTask9</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.ProjectTaskTest" class="method navigator-link" hash-for-method="CreateTaskWithWhitespaceTitle">CreateTaskWithWhitespaceTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="SearchingGroupingFiltering">SearchingGroupingFiltering</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.Workflow_LoginTest" class="method navigator-link" hash-for-method="TC_LG_01_SuccessfulLogin">TC_LG_01_SuccessfulLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.Workflow_LoginTest" class="method navigator-link" hash-for-method="TC_LG_02_LoginWithInvalidPassword">TC_LG_02_LoginWithInvalidPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.Workflow_LoginTest" class="method navigator-link" hash-for-method="TC_LG_03_LoginWithInvalidUsername">TC_LG_03_LoginWithInvalidUsername</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.Workflow_LoginTest" class="method navigator-link" hash-for-method="TC_LG_04_LoginWithBlankFields">TC_LG_04_LoginWithBlankFields</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.Workflow_LoginTest" class="method navigator-link" hash-for-method="TC_LG_05_LoginWithBlankPasswordOnly">TC_LG_05_LoginWithBlankPasswordOnly</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.Workflow_LoginTest" class="method navigator-link" hash-for-method="TC_LG_06_LoginWithCaseSensitivePassword">TC_LG_06_LoginWithCaseSensitivePassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.Workflow_LoginTest" class="method navigator-link" hash-for-method="TC_LG_07_LoginWithExtraWhitespaceInUsername">TC_LG_07_LoginWithExtraWhitespaceInUsername</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.Workflow_LoginTest" class="method navigator-link" hash-for-method="TC_LG_08_LoginWithSQLInjectionPayload">TC_LG_08_LoginWithSQLInjectionPayload</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.Workflow_LoginTest" class="method navigator-link" hash-for-method="TC_LG_09_LoginWithMaximumCharacterBoundary">TC_LG_09_LoginWithMaximumCharacterBoundary</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_01_ProjectCreationWithDynamicName">TC_WF1_01_ProjectCreationWithDynamicName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_02_ProjectCreationWithBlankNameField">TC_WF1_02_ProjectCreationWithBlankNameField</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_03_ProjectCreationWithMaximumCharacterLimit">TC_WF1_03_ProjectCreationWithMaximumCharacterLimit</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols">TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_05_ModifyProjectPrivacyToInvitedUsers">TC_WF1_05_ModifyProjectPrivacyToInvitedUsers</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_06_ChangeAssignedProjectManager">TC_WF1_06_ChangeAssignedProjectManager</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_07_EnableTaskDependenciesFeatureInSettings">TC_WF1_07_EnableTaskDependenciesFeatureInSettings</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_08_AddClassificationTagsDuringConfiguration">TC_WF1_08_AddClassificationTagsDuringConfiguration</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_09_DiscardConfigurationChangesWithoutSaving">TC_WF1_09_DiscardConfigurationChangesWithoutSaving</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_10_SuccessfulProjectArchivingExecution">TC_WF1_10_SuccessfulProjectArchivingExecution</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_11_VerifyArchivedRecordUnderSystemFilters">TC_WF1_11_VerifyArchivedRecordUnderSystemFilters</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_12_SuccessfulProjectUnarchivingRestoration">TC_WF1_12_SuccessfulProjectUnarchivingRestoration</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.CreationandConfigurationproject" class="method navigator-link" hash-for-method="TC_WF1_13_ProjectCleanupAndDeletionProcessing">TC_WF1_13_ProjectCleanupAndDeletionProcessing</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="filteringItemThatDoesNotExist">filteringItemThatDoesNotExist</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="groupingEmptyResult">groupingEmptyResult</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="handleExtraSpace">handleExtraSpace</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="longSearchTaskName">longSearchTaskName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="multipleFilters">multipleFilters</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="multipleGrouping">multipleGrouping</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="multipleSearchTerms">multipleSearchTerms</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="saveSearchFave">saveSearchFave</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="searchCaseInsensitive">searchCaseInsensitive</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="searchingForTask">searchingForTask</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="searchingRandomLetter">searchingRandomLetter</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OdooTestSuite" title="g2_group.odoo.AllTasksPageTest" class="method navigator-link" hash-for-method="simpleScriptInjection">simpleScriptInjection</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-OdooTestSuite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -337,277 +171,103 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-OdooTestSuite" class="panel OdooTestSuite">
-          <div class="suite-OdooTestSuite-class-passed">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">g2_group.odoo.Workflow_LoginTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">g2_group.odoo.ProjectTaskTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_LG_01_SuccessfulLogin">
-                  </a> <!-- TC_LG_01_SuccessfulLogin -->
-                  <span class="method-name">TC_LG_01_SuccessfulLogin</span>
+                  <a name="executeTaskTests(4, Empty fields, [], , EXPECT_FAILURE)">
+                  </a> <!-- executeTaskTests(4, Empty fields, [], , EXPECT_FAILURE) -->
+                  <span class="method-name">executeTaskTests</span>
+                  <span class="parameters">(4,Empty fields,[],,EXPECT_FAILURE)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Error message mismatch in scenario 4! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at g2_group.odoo.ProjectTaskTest.executeTaskTests(ProjectTaskTest.java:89)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_LG_02_LoginWithInvalidPassword">
-                  </a> <!-- TC_LG_02_LoginWithInvalidPassword -->
-                  <span class="method-name">TC_LG_02_LoginWithInvalidPassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_LG_03_LoginWithInvalidUsername">
-                  </a> <!-- TC_LG_03_LoginWithInvalidUsername -->
-                  <span class="method-name">TC_LG_03_LoginWithInvalidUsername</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_LG_04_LoginWithBlankFields">
-                  </a> <!-- TC_LG_04_LoginWithBlankFields -->
-                  <span class="method-name">TC_LG_04_LoginWithBlankFields</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_LG_05_LoginWithBlankPasswordOnly">
-                  </a> <!-- TC_LG_05_LoginWithBlankPasswordOnly -->
-                  <span class="method-name">TC_LG_05_LoginWithBlankPasswordOnly</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_LG_06_LoginWithCaseSensitivePassword">
-                  </a> <!-- TC_LG_06_LoginWithCaseSensitivePassword -->
-                  <span class="method-name">TC_LG_06_LoginWithCaseSensitivePassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_LG_07_LoginWithExtraWhitespaceInUsername">
-                  </a> <!-- TC_LG_07_LoginWithExtraWhitespaceInUsername -->
-                  <span class="method-name">TC_LG_07_LoginWithExtraWhitespaceInUsername</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_LG_08_LoginWithSQLInjectionPayload">
-                  </a> <!-- TC_LG_08_LoginWithSQLInjectionPayload -->
-                  <span class="method-name">TC_LG_08_LoginWithSQLInjectionPayload</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_LG_09_LoginWithMaximumCharacterBoundary">
-                  </a> <!-- TC_LG_09_LoginWithMaximumCharacterBoundary -->
-                  <span class="method-name">TC_LG_09_LoginWithMaximumCharacterBoundary</span>
+                  <a name="executeTaskTests(8, InvalidDate, [Fadi Abuaita], 99/99/9999, NORMAL)">
+                  </a> <!-- executeTaskTests(8, InvalidDate, [Fadi Abuaita], 99/99/9999, NORMAL) -->
+                  <span class="method-name">executeTaskTests</span>
+                  <span class="parameters">(8,InvalidDate,[Fadi Abuaita],99/99/9999,NORMAL)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(), &apos;InvalidDate&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Mega\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59498}, goog:processID: 3148, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59498/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a26f65fd8f7c534837053ad1efb5376b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at g2_group.odoo.ProjectTaskPage.createTask(ProjectTaskPage.java:69)
+	at g2_group.odoo.ProjectTaskTest.executeTaskTests(ProjectTaskTest.java:83)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OdooTestSuite-class-passed -->
-          <div class="suite-OdooTestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">g2_group.odoo.CreationandConfigurationproject</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_01_ProjectCreationWithDynamicName">
-                  </a> <!-- TC_WF1_01_ProjectCreationWithDynamicName -->
-                  <span class="method-name">TC_WF1_01_ProjectCreationWithDynamicName</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_02_ProjectCreationWithBlankNameField">
-                  </a> <!-- TC_WF1_02_ProjectCreationWithBlankNameField -->
-                  <span class="method-name">TC_WF1_02_ProjectCreationWithBlankNameField</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_03_ProjectCreationWithMaximumCharacterLimit">
-                  </a> <!-- TC_WF1_03_ProjectCreationWithMaximumCharacterLimit -->
-                  <span class="method-name">TC_WF1_03_ProjectCreationWithMaximumCharacterLimit</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols">
-                  </a> <!-- TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols -->
-                  <span class="method-name">TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_05_ModifyProjectPrivacyToInvitedUsers">
-                  </a> <!-- TC_WF1_05_ModifyProjectPrivacyToInvitedUsers -->
-                  <span class="method-name">TC_WF1_05_ModifyProjectPrivacyToInvitedUsers</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_06_ChangeAssignedProjectManager">
-                  </a> <!-- TC_WF1_06_ChangeAssignedProjectManager -->
-                  <span class="method-name">TC_WF1_06_ChangeAssignedProjectManager</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_07_EnableTaskDependenciesFeatureInSettings">
-                  </a> <!-- TC_WF1_07_EnableTaskDependenciesFeatureInSettings -->
-                  <span class="method-name">TC_WF1_07_EnableTaskDependenciesFeatureInSettings</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_08_AddClassificationTagsDuringConfiguration">
-                  </a> <!-- TC_WF1_08_AddClassificationTagsDuringConfiguration -->
-                  <span class="method-name">TC_WF1_08_AddClassificationTagsDuringConfiguration</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_09_DiscardConfigurationChangesWithoutSaving">
-                  </a> <!-- TC_WF1_09_DiscardConfigurationChangesWithoutSaving -->
-                  <span class="method-name">TC_WF1_09_DiscardConfigurationChangesWithoutSaving</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_10_SuccessfulProjectArchivingExecution">
-                  </a> <!-- TC_WF1_10_SuccessfulProjectArchivingExecution -->
-                  <span class="method-name">TC_WF1_10_SuccessfulProjectArchivingExecution</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_11_VerifyArchivedRecordUnderSystemFilters">
-                  </a> <!-- TC_WF1_11_VerifyArchivedRecordUnderSystemFilters -->
-                  <span class="method-name">TC_WF1_11_VerifyArchivedRecordUnderSystemFilters</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_12_SuccessfulProjectUnarchivingRestoration">
-                  </a> <!-- TC_WF1_12_SuccessfulProjectUnarchivingRestoration -->
-                  <span class="method-name">TC_WF1_12_SuccessfulProjectUnarchivingRestoration</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_WF1_13_ProjectCleanupAndDeletionProcessing">
-                  </a> <!-- TC_WF1_13_ProjectCleanupAndDeletionProcessing -->
-                  <span class="method-name">TC_WF1_13_ProjectCleanupAndDeletionProcessing</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OdooTestSuite-class-passed -->
-          <div class="suite-OdooTestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">g2_group.odoo.AllTasksPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchingGroupingFiltering">
-                  </a> <!-- SearchingGroupingFiltering -->
-                  <span class="method-name">SearchingGroupingFiltering</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="filteringItemThatDoesNotExist">
-                  </a> <!-- filteringItemThatDoesNotExist -->
-                  <span class="method-name">filteringItemThatDoesNotExist</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="groupingEmptyResult">
-                  </a> <!-- groupingEmptyResult -->
-                  <span class="method-name">groupingEmptyResult</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="handleExtraSpace">
-                  </a> <!-- handleExtraSpace -->
-                  <span class="method-name">handleExtraSpace</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="longSearchTaskName">
-                  </a> <!-- longSearchTaskName -->
-                  <span class="method-name">longSearchTaskName</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="multipleFilters">
-                  </a> <!-- multipleFilters -->
-                  <span class="method-name">multipleFilters</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="multipleGrouping">
-                  </a> <!-- multipleGrouping -->
-                  <span class="method-name">multipleGrouping</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="multipleSearchTerms">
-                  </a> <!-- multipleSearchTerms -->
-                  <span class="method-name">multipleSearchTerms</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="saveSearchFave">
-                  </a> <!-- saveSearchFave -->
-                  <span class="method-name">saveSearchFave</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchCaseInsensitive">
-                  </a> <!-- searchCaseInsensitive -->
-                  <span class="method-name">searchCaseInsensitive</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchingForTask">
-                  </a> <!-- searchingForTask -->
-                  <span class="method-name">searchingForTask</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchingRandomLetter">
-                  </a> <!-- searchingRandomLetter -->
-                  <span class="method-name">searchingRandomLetter</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="simpleScriptInjection">
-                  </a> <!-- simpleScriptInjection -->
-                  <span class="method-name">simpleScriptInjection</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OdooTestSuite-class-passed -->
-          <div class="suite-OdooTestSuite-class-passed">
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">g2_group.odoo.ProjectTaskTest</span>
@@ -615,358 +275,217 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateTask1">
-                  </a> <!-- CreateTask1 -->
-                  <span class="method-name">CreateTask1</span>
+                  <a name="executeTaskTests(2, Urgent, [Fadi Abuaita], 06/02/2026, NORMAL)">
+                  </a> <!-- executeTaskTests(2, Urgent, [Fadi Abuaita], 06/02/2026, NORMAL) -->
+                  <span class="method-name">executeTaskTests</span>
+                  <span class="parameters">(2,Urgent,[Fadi Abuaita],06/02/2026,NORMAL)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateTask10">
-                  </a> <!-- CreateTask10 -->
-                  <span class="method-name">CreateTask10</span>
+                  <a name="executeTaskTests(10, Minimal, [], , TITLE_ONLY)">
+                  </a> <!-- executeTaskTests(10, Minimal, [], , TITLE_ONLY) -->
+                  <span class="method-name">executeTaskTests</span>
+                  <span class="parameters">(10,Minimal,[],,TITLE_ONLY)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateTask2">
-                  </a> <!-- CreateTask2 -->
-                  <span class="method-name">CreateTask2</span>
+                  <a name="executeTaskTests(6,      , [], , EXPECT_INVALID_TITLE)">
+                  </a> <!-- executeTaskTests(6,      , [], , EXPECT_INVALID_TITLE) -->
+                  <span class="method-name">executeTaskTests</span>
+                  <span class="parameters">(6,     ,[],,EXPECT_INVALID_TITLE)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateTask3">
-                  </a> <!-- CreateTask3 -->
-                  <span class="method-name">CreateTask3</span>
+                  <a name="executeTaskTests(3, Multiple Assignee, [Fadi Abuaita, Abdulhakeem Sakhel, Bashar Abuhwila], 05/30/2026, NORMAL)">
+                  </a> <!-- executeTaskTests(3, Multiple Assignee, [Fadi Abuaita, Abdulhakeem Sakhel, Bashar Abuhwila], 05/30/2026, NORMAL) -->
+                  <span class="method-name">executeTaskTests</span>
+                  <span class="parameters">(3,Multiple Assignee,[Fadi Abuaita, Abdulhakeem Sakhel, Bashar Abuhwila],05/30/2026,NORMAL)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateTask4">
-                  </a> <!-- CreateTask4 -->
-                  <span class="method-name">CreateTask4</span>
+                  <a name="executeTaskTests(5, in the Past, [Fadi Abuaita], 02/25/2026, NORMAL)">
+                  </a> <!-- executeTaskTests(5, in the Past, [Fadi Abuaita], 02/25/2026, NORMAL) -->
+                  <span class="method-name">executeTaskTests</span>
+                  <span class="parameters">(5,in the Past,[Fadi Abuaita],02/25/2026,NORMAL)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateTask5">
-                  </a> <!-- CreateTask5 -->
-                  <span class="method-name">CreateTask5</span>
+                  <a name="executeTaskTests(7, !@#$%^&amp;**, [Fadi Abuaita], 07/25/2026, NORMAL)">
+                  </a> <!-- executeTaskTests(7, !@#$%^&**, [Fadi Abuaita], 07/25/2026, NORMAL) -->
+                  <span class="method-name">executeTaskTests</span>
+                  <span class="parameters">(7,!@#$%^&**,[Fadi Abuaita],07/25/2026,NORMAL)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateTask7">
-                  </a> <!-- CreateTask7 -->
-                  <span class="method-name">CreateTask7</span>
+                  <a name="executeTaskTests(1, All Positive, [Fadi Abuaita], 07/25/2026, NORMAL)">
+                  </a> <!-- executeTaskTests(1, All Positive, [Fadi Abuaita], 07/25/2026, NORMAL) -->
+                  <span class="method-name">executeTaskTests</span>
+                  <span class="parameters">(1,All Positive,[Fadi Abuaita],07/25/2026,NORMAL)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateTask8">
-                  </a> <!-- CreateTask8 -->
-                  <span class="method-name">CreateTask8</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="CreateTask9">
-                  </a> <!-- CreateTask9 -->
-                  <span class="method-name">CreateTask9</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="CreateTaskWithWhitespaceTitle">
-                  </a> <!-- CreateTaskWithWhitespaceTitle -->
-                  <span class="method-name">CreateTaskWithWhitespaceTitle</span>
+                  <a name="executeTaskTests(9, Far FutureD, [Fadi Abuaita], 03/20/2036, NORMAL)">
+                  </a> <!-- executeTaskTests(9, Far FutureD, [Fadi Abuaita], 03/20/2036, NORMAL) -->
+                  <span class="method-name">executeTaskTests</span>
+                  <span class="parameters">(9,Far FutureD,[Fadi Abuaita],03/20/2036,NORMAL)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OdooTestSuite-class-passed -->
-        </div> <!-- panel OdooTestSuite -->
-        <div panel-name="test-xml-OdooTestSuite" class="panel">
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ASUS\eclipse-workspace\odoo\testng.xml</span>
+            <span class="header-content">C:\Users\Mega\AppData\Local\Temp\testng-eclipse-25567680\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;OdooTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;ProjectTask&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;g2_group.odoo.ProjectTaskTest&quot;/&gt;
+      &lt;class name=&quot;g2_group.odoo.ProjectTaskTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;executeTaskTests&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- g2_group.odoo.ProjectTaskTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ProjectTask --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;ProjectCreationAndConfiguration&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;g2_group.odoo.CreationandConfigurationproject&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ProjectCreationAndConfiguration --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;WorkflowLogin&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;g2_group.odoo.Workflow_LoginTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- WorkflowLogin --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;AllTasksPage&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;g2_group.odoo.AllTasksPageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- AllTasksPage --&gt;
-&lt;/suite&gt; &lt;!-- OdooTestSuite --&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-OdooTestSuite" class="panel">
+        <div panel-name="testlist-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for OdooTestSuite</span>
+            <span class="header-content">Tests for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">ProjectTask (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">ProjectCreationAndConfiguration (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">WorkflowLogin (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">AllTasksPage (1 class)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-OdooTestSuite" class="panel">
+        <div panel-name="group-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for OdooTestSuite</span>
+            <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-OdooTestSuite" class="panel">
+        <div panel-name="times-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for OdooTestSuite</span>
+            <span class="header-content">Times for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_OdooTestSuite');
-function tableData_OdooTestSuite() {
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(45);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'longSearchTaskName')
-data.setCell(0, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(0, 3, 13767);
+data.setCell(0, 1, 'executeTaskTests')
+data.setCell(0, 2, 'g2_group.odoo.ProjectTaskTest')
+data.setCell(0, 3, 11634);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_LG_06_LoginWithCaseSensitivePassword')
-data.setCell(1, 2, 'g2_group.odoo.Workflow_LoginTest')
-data.setCell(1, 3, 11396);
+data.setCell(1, 1, 'executeTaskTests')
+data.setCell(1, 2, 'g2_group.odoo.ProjectTaskTest')
+data.setCell(1, 3, 10173);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_LG_09_LoginWithMaximumCharacterBoundary')
-data.setCell(2, 2, 'g2_group.odoo.Workflow_LoginTest')
-data.setCell(2, 3, 11159);
+data.setCell(2, 1, 'executeTaskTests')
+data.setCell(2, 2, 'g2_group.odoo.ProjectTaskTest')
+data.setCell(2, 3, 8282);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_LG_08_LoginWithSQLInjectionPayload')
-data.setCell(3, 2, 'g2_group.odoo.Workflow_LoginTest')
-data.setCell(3, 3, 10988);
+data.setCell(3, 1, 'executeTaskTests')
+data.setCell(3, 2, 'g2_group.odoo.ProjectTaskTest')
+data.setCell(3, 3, 5968);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_LG_07_LoginWithExtraWhitespaceInUsername')
-data.setCell(4, 2, 'g2_group.odoo.Workflow_LoginTest')
-data.setCell(4, 3, 10974);
+data.setCell(4, 1, 'executeTaskTests')
+data.setCell(4, 2, 'g2_group.odoo.ProjectTaskTest')
+data.setCell(4, 3, 5901);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_LG_03_LoginWithInvalidUsername')
-data.setCell(5, 2, 'g2_group.odoo.Workflow_LoginTest')
-data.setCell(5, 3, 10921);
+data.setCell(5, 1, 'executeTaskTests')
+data.setCell(5, 2, 'g2_group.odoo.ProjectTaskTest')
+data.setCell(5, 3, 4379);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'simpleScriptInjection')
-data.setCell(6, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(6, 3, 10906);
+data.setCell(6, 1, 'executeTaskTests')
+data.setCell(6, 2, 'g2_group.odoo.ProjectTaskTest')
+data.setCell(6, 3, 4368);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_LG_02_LoginWithInvalidPassword')
-data.setCell(7, 2, 'g2_group.odoo.Workflow_LoginTest')
-data.setCell(7, 3, 10672);
+data.setCell(7, 1, 'executeTaskTests')
+data.setCell(7, 2, 'g2_group.odoo.ProjectTaskTest')
+data.setCell(7, 3, 4230);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_LG_04_LoginWithBlankFields')
-data.setCell(8, 2, 'g2_group.odoo.Workflow_LoginTest')
-data.setCell(8, 3, 10652);
+data.setCell(8, 1, 'executeTaskTests')
+data.setCell(8, 2, 'g2_group.odoo.ProjectTaskTest')
+data.setCell(8, 3, 1667);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC_LG_05_LoginWithBlankPasswordOnly')
-data.setCell(9, 2, 'g2_group.odoo.Workflow_LoginTest')
-data.setCell(9, 3, 10426);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'CreateTask3')
-data.setCell(10, 2, 'g2_group.odoo.ProjectTaskTest')
-data.setCell(10, 3, 9714);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'CreateTask1')
-data.setCell(11, 2, 'g2_group.odoo.ProjectTaskTest')
-data.setCell(11, 3, 6709);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC_WF1_03_ProjectCreationWithMaximumCharacterLimit')
-data.setCell(12, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(12, 3, 5955);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TC_WF1_01_ProjectCreationWithDynamicName')
-data.setCell(13, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(13, 3, 5930);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'TC_WF1_02_ProjectCreationWithBlankNameField')
-data.setCell(14, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(14, 3, 5867);
-data.setCell(15, 0, 15)
-data.setCell(15, 1, 'TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols')
-data.setCell(15, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(15, 3, 5775);
-data.setCell(16, 0, 16)
-data.setCell(16, 1, 'TC_WF1_10_SuccessfulProjectArchivingExecution')
-data.setCell(16, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(16, 3, 5767);
-data.setCell(17, 0, 17)
-data.setCell(17, 1, 'TC_WF1_08_AddClassificationTagsDuringConfiguration')
-data.setCell(17, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(17, 3, 5750);
-data.setCell(18, 0, 18)
-data.setCell(18, 1, 'TC_WF1_07_EnableTaskDependenciesFeatureInSettings')
-data.setCell(18, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(18, 3, 5744);
-data.setCell(19, 0, 19)
-data.setCell(19, 1, 'TC_WF1_05_ModifyProjectPrivacyToInvitedUsers')
-data.setCell(19, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(19, 3, 5738);
-data.setCell(20, 0, 20)
-data.setCell(20, 1, 'TC_WF1_06_ChangeAssignedProjectManager')
-data.setCell(20, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(20, 3, 5730);
-data.setCell(21, 0, 21)
-data.setCell(21, 1, 'CreateTask2')
-data.setCell(21, 2, 'g2_group.odoo.ProjectTaskTest')
-data.setCell(21, 3, 5519);
-data.setCell(22, 0, 22)
-data.setCell(22, 1, 'CreateTask9')
-data.setCell(22, 2, 'g2_group.odoo.ProjectTaskTest')
-data.setCell(22, 3, 5483);
-data.setCell(23, 0, 23)
-data.setCell(23, 1, 'CreateTask8')
-data.setCell(23, 2, 'g2_group.odoo.ProjectTaskTest')
-data.setCell(23, 3, 5400);
-data.setCell(24, 0, 24)
-data.setCell(24, 1, 'CreateTask5')
-data.setCell(24, 2, 'g2_group.odoo.ProjectTaskTest')
-data.setCell(24, 3, 4947);
-data.setCell(25, 0, 25)
-data.setCell(25, 1, 'CreateTask7')
-data.setCell(25, 2, 'g2_group.odoo.ProjectTaskTest')
-data.setCell(25, 3, 4887);
-data.setCell(26, 0, 26)
-data.setCell(26, 1, 'CreateTask10')
-data.setCell(26, 2, 'g2_group.odoo.ProjectTaskTest')
-data.setCell(26, 3, 4164);
-data.setCell(27, 0, 27)
-data.setCell(27, 1, 'TC_LG_01_SuccessfulLogin')
-data.setCell(27, 2, 'g2_group.odoo.Workflow_LoginTest')
-data.setCell(27, 3, 3917);
-data.setCell(28, 0, 28)
-data.setCell(28, 1, 'TC_WF1_09_DiscardConfigurationChangesWithoutSaving')
-data.setCell(28, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(28, 3, 2753);
-data.setCell(29, 0, 29)
-data.setCell(29, 1, 'multipleGrouping')
-data.setCell(29, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(29, 3, 2609);
-data.setCell(30, 0, 30)
-data.setCell(30, 1, 'saveSearchFave')
-data.setCell(30, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(30, 3, 1866);
-data.setCell(31, 0, 31)
-data.setCell(31, 1, 'CreateTaskWithWhitespaceTitle')
-data.setCell(31, 2, 'g2_group.odoo.ProjectTaskTest')
-data.setCell(31, 3, 1721);
-data.setCell(32, 0, 32)
-data.setCell(32, 1, 'CreateTask4')
-data.setCell(32, 2, 'g2_group.odoo.ProjectTaskTest')
-data.setCell(32, 3, 1675);
-data.setCell(33, 0, 33)
-data.setCell(33, 1, 'SearchingGroupingFiltering')
-data.setCell(33, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(33, 3, 1344);
-data.setCell(34, 0, 34)
-data.setCell(34, 1, 'multipleFilters')
-data.setCell(34, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(34, 3, 1096);
-data.setCell(35, 0, 35)
-data.setCell(35, 1, 'groupingEmptyResult')
-data.setCell(35, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(35, 3, 973);
-data.setCell(36, 0, 36)
-data.setCell(36, 1, 'filteringItemThatDoesNotExist')
-data.setCell(36, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(36, 3, 967);
-data.setCell(37, 0, 37)
-data.setCell(37, 1, 'multipleSearchTerms')
-data.setCell(37, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(37, 3, 824);
-data.setCell(38, 0, 38)
-data.setCell(38, 1, 'handleExtraSpace')
-data.setCell(38, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(38, 3, 662);
-data.setCell(39, 0, 39)
-data.setCell(39, 1, 'searchCaseInsensitive')
-data.setCell(39, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(39, 3, 659);
-data.setCell(40, 0, 40)
-data.setCell(40, 1, 'searchingForTask')
-data.setCell(40, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(40, 3, 655);
-data.setCell(41, 0, 41)
-data.setCell(41, 1, 'searchingRandomLetter')
-data.setCell(41, 2, 'g2_group.odoo.AllTasksPageTest')
-data.setCell(41, 3, 636);
-data.setCell(42, 0, 42)
-data.setCell(42, 1, 'TC_WF1_12_SuccessfulProjectUnarchivingRestoration')
-data.setCell(42, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(42, 3, 2);
-data.setCell(43, 0, 43)
-data.setCell(43, 1, 'TC_WF1_11_VerifyArchivedRecordUnderSystemFilters')
-data.setCell(43, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(43, 3, 1);
-data.setCell(44, 0, 44)
-data.setCell(44, 1, 'TC_WF1_13_ProjectCleanupAndDeletionProcessing')
-data.setCell(44, 2, 'g2_group.odoo.CreationandConfigurationproject')
-data.setCell(44, 3, 0);
-window.suiteTableData['OdooTestSuite']= { tableData: data, tableDiv: 'times-div-OdooTestSuite'}
+data.setCell(9, 1, 'executeTaskTests')
+data.setCell(9, 2, 'g2_group.odoo.ProjectTaskTest')
+data.setCell(9, 3, 1294);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
-              <div id="times-div-OdooTestSuite">
-              </div> <!-- times-div-OdooTestSuite -->
+              <span class="suite-total-time">Total running time: 57 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-OdooTestSuite" class="panel">
+        <div panel-name="reporter-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for OdooTestSuite</span>
+            <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-OdooTestSuite" class="panel">
+        <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">g2_group.odoo.ProjectTaskTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">CreateTask1</span>
+                <br/>
+                <span class="ignored-method-name">CreateTask10</span>
+                <br/>
+                <span class="ignored-method-name">CreateTask4</span>
+                <br/>
+                <span class="ignored-method-name">CreateTask3</span>
+                <br/>
+                <span class="ignored-method-name">CreateTask5</span>
+                <br/>
+                <span class="ignored-method-name">CreateTask8</span>
+                <br/>
+                <span class="ignored-method-name">CreateTaskWithWhitespaceTitle</span>
+                <br/>
+                <span class="ignored-method-name">CreateTask7</span>
+                <br/>
+                <span class="ignored-method-name">CreateTask2</span>
+                <br/>
+                <span class="ignored-method-name">CreateTask9</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-OdooTestSuite" class="panel">
+        <div panel-name="chronological-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -979,420 +498,55 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">startClean</span>
-                <span class="method-start">3324 ms</span>
+                <span class="method-start">3228 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">CreateTask1</span>
-                <span class="method-start">7867 ms</span>
+                <span class="method-name">executeTaskTests(1, All Positive, [Fadi Abuaita], 07/25/2026, NORMAL)</span>
+                <span class="method-start">12905 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">CreateTask2</span>
-                <span class="method-start">14581 ms</span>
+                <span class="method-name">executeTaskTests(2, Urgent, [Fadi Abuaita], 06/02/2026, NORMAL)</span>
+                <span class="method-start">21189 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">CreateTask3</span>
-                <span class="method-start">20103 ms</span>
+                <span class="method-name">executeTaskTests(3, Multiple Assignee, [Fadi Abuaita, Abdulhakeem Sakhel, Bashar Abuhwila], 05/30/2026, NORMAL)</span>
+                <span class="method-start">27092 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">CreateTask4</span>
-                <span class="method-start">29821 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">executeTaskTests(4, Empty fields, [], , EXPECT_FAILURE)</span>
+                <span class="method-start">37267 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">CreateTask5</span>
-                <span class="method-start">31499 ms</span>
+                <span class="method-name">executeTaskTests(5, in the Past, [Fadi Abuaita], 02/25/2026, NORMAL)</span>
+                <span class="method-start">38563 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">CreateTaskWithWhitespaceTitle</span>
-                <span class="method-start">36452 ms</span>
+                <span class="method-name">executeTaskTests(6,      , [], , EXPECT_INVALID_TITLE)</span>
+                <span class="method-start">42932 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">CreateTask7</span>
-                <span class="method-start">38174 ms</span>
+                <span class="method-name">executeTaskTests(7, !@#$%^&**, [Fadi Abuaita], 07/25/2026, NORMAL)</span>
+                <span class="method-start">44600 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">CreateTask8</span>
-                <span class="method-start">43073 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">executeTaskTests(8, InvalidDate, [Fadi Abuaita], 99/99/9999, NORMAL)</span>
+                <span class="method-start">50569 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">CreateTask9</span>
-                <span class="method-start">48477 ms</span>
+                <span class="method-name">executeTaskTests(9, Far FutureD, [Fadi Abuaita], 03/20/2036, NORMAL)</span>
+                <span class="method-start">62206 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">CreateTask10</span>
-                <span class="method-start">53963 ms</span>
+                <span class="method-name">executeTaskTests(10, Minimal, [], , TITLE_ONLY)</span>
+                <span class="method-start">66586 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58129 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">g2_group.odoo.CreationandConfigurationproject</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">58295 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_01_ProjectCreationWithDynamicName</span>
-                <span class="method-start">67528 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">73458 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">73625 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_02_ProjectCreationWithBlankNameField</span>
-                <span class="method-start">82034 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">87901 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">88029 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_03_ProjectCreationWithMaximumCharacterLimit</span>
-                <span class="method-start">96444 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">102401 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">102535 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_04_ProjectCreationWithSpecialCharactersAndSymbols</span>
-                <span class="method-start">111009 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">116785 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">116935 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_05_ModifyProjectPrivacyToInvitedUsers</span>
-                <span class="method-start">125908 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">131646 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">131801 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_06_ChangeAssignedProjectManager</span>
-                <span class="method-start">140245 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">145975 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">146128 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_07_EnableTaskDependenciesFeatureInSettings</span>
-                <span class="method-start">154570 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">160314 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">160455 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_08_AddClassificationTagsDuringConfiguration</span>
-                <span class="method-start">168771 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">174521 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">174677 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_09_DiscardConfigurationChangesWithoutSaving</span>
-                <span class="method-start">182916 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">185669 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">185795 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_10_SuccessfulProjectArchivingExecution</span>
-                <span class="method-start">193984 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">199751 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">199908 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_11_VerifyArchivedRecordUnderSystemFilters</span>
-                <span class="method-start">208177 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">208178 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">208301 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_12_SuccessfulProjectUnarchivingRestoration</span>
-                <span class="method-start">217331 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">217337 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">217441 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_WF1_13_ProjectCleanupAndDeletionProcessing</span>
-                <span class="method-start">225583 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">225584 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">g2_group.odoo.Workflow_LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">225713 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">initPage</span>
-                <span class="method-start">228055 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">startClean</span>
-                <span class="method-start">228055 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_LG_01_SuccessfulLogin</span>
-                <span class="method-start">228781 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">startClean</span>
-                <span class="method-start">232699 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_LG_02_LoginWithInvalidPassword</span>
-                <span class="method-start">233221 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">startClean</span>
-                <span class="method-start">243893 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_LG_03_LoginWithInvalidUsername</span>
-                <span class="method-start">244408 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">startClean</span>
-                <span class="method-start">255330 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_LG_04_LoginWithBlankFields</span>
-                <span class="method-start">255593 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">startClean</span>
-                <span class="method-start">266250 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_LG_05_LoginWithBlankPasswordOnly</span>
-                <span class="method-start">266776 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">startClean</span>
-                <span class="method-start">277208 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_LG_06_LoginWithCaseSensitivePassword</span>
-                <span class="method-start">277479 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">startClean</span>
-                <span class="method-start">288875 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_LG_07_LoginWithExtraWhitespaceInUsername</span>
-                <span class="method-start">289735 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">startClean</span>
-                <span class="method-start">300709 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_LG_08_LoginWithSQLInjectionPayload</span>
-                <span class="method-start">301240 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">startClean</span>
-                <span class="method-start">312229 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_LG_09_LoginWithMaximumCharacterBoundary</span>
-                <span class="method-start">312764 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">323923 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">g2_group.odoo.AllTasksPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">324060 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">initPages</span>
-                <span class="method-start">326831 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">startClean</span>
-                <span class="method-start">326832 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">331567 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SearchingGroupingFiltering</span>
-                <span class="method-start">333201 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">334546 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchingForTask</span>
-                <span class="method-start">335458 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">336114 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">multipleFilters</span>
-                <span class="method-start">337302 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">338399 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">multipleSearchTerms</span>
-                <span class="method-start">339325 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">340150 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">multipleGrouping</span>
-                <span class="method-start">341095 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">343712 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">saveSearchFave</span>
-                <span class="method-start">344699 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">346566 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchingRandomLetter</span>
-                <span class="method-start">347956 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">348597 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">filteringItemThatDoesNotExist</span>
-                <span class="method-start">349523 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">350492 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">groupingEmptyResult</span>
-                <span class="method-start">351411 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">352384 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchCaseInsensitive</span>
-                <span class="method-start">353269 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">353930 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">handleExtraSpace</span>
-                <span class="method-start">354873 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">355535 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">longSearchTaskName</span>
-                <span class="method-start">356483 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">clearSearchBox</span>
-                <span class="method-start">370252 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">simpleScriptInjection</span>
-                <span class="method-start">371432 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">382338 ms</span>
+                <span class="method-start">70818 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

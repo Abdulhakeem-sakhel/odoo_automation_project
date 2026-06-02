@@ -5,19 +5,10 @@
     <classes>
       <class name="g2_group.odoo.ProjectTaskTest">
         <methods>
-          <include name="CreateTask3"/>
-          <include name="CreateTask9"/>
-          <include name="CreateTask5"/>
-          <include name="CreateTask8"/>
-          <include name="CreateTask10"/>
-          <include name="CreateTask7"/>
+          <include name="executeTaskTests" invocation-numbers="3 7"/>
           <include name="setUp"/>
           <include name="startClean"/>
-          <include name="CreateTask2"/>
           <include name="tearDown"/>
-          <include name="CreateTaskWithWhitespaceTitle"/>
-          <include name="CreateTask1"/>
-          <include name="CreateTask4"/>
         </methods>
       </class> <!-- g2_group.odoo.ProjectTaskTest -->
     </classes>

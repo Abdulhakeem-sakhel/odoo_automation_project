@@ -1,6 +1,6 @@
 # Odoo Automation Project
 
-Automated UI test suite for the [Odoo](https://www.odoo.com/) ERP platform, built as a group project for the Quality Aassurance bootcamp. The suite exercises the **Login**, **Project**, **Project Task**, and **All Tasks** modules of an Odoo instance using Selenium WebDriver with the Page Object Model (POM) pattern, driven by TestNG.
+Automated UI test suite for the [Odoo](https://www.odoo.com/) ERP platform, built as a group project for the Quality Aassurance bootcamp. The suite exercises the **Login**, **Project**, **Project Task**, and **All Tasks** modules of an Odoo instance using Selenium WebDriver with the Page Object Model pattern, driven by TestNG.
 
 ## Team Members
 

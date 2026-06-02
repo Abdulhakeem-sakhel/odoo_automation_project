@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import g2_group.odoo.util.ConfigReader;
 import g2_group.odoo.util.RandomStringUtil;
 
 public class Workflow_LoginTest extends BaseTest {

@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import g2_group.odoo.util.ConfigReader;
+
 public class LoginTest extends BaseTest {
 
     private String logInPath = "/web/login";

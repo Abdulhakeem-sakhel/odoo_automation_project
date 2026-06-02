@@ -1,4 +1,4 @@
-package g2_group.odoo;
+package g2_group.odoo.util;
 
 import java.io.IOException;
 import java.io.InputStream;

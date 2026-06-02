@@ -10,6 +10,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import g2_group.odoo.util.ConfigReader;
+
 import org.testng.annotations.DataProvider;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -29,7 +32,6 @@ public class ProjectTaskTest extends BaseTest {
 	
 	@Override
 	protected String getPath() {
-		// TODO Auto-generated method stub
 		return "/odoo/project/148/tasks";
 	}
 	

@@ -82,7 +82,7 @@ odoo/
    email=your-email@example.com
    password=your-password
    ```
-   > ⚠️ `config.properties` is git-ignored — do **not** commit credentials.
+   > ⚠️ `config.properties` is git-ignored — do **not** commit credentials
 
 3. Install dependencies:
    ```bash

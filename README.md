@@ -67,7 +67,7 @@ odoo/
 
 ## Setup
 
-1. Clone the repository.
+1. Clone the repository
    ```bash
    git clone https://github.com/abdulhakeem-sakhel/odoo_automation_project.git
    cd odoo_automation_project

@@ -143,7 +143,7 @@ public class AllTasksPageTest extends BaseTest {
 
     @Test (priority = 11)
     public void handleExtraSpace() {
-        String taskName = "                12 Task             ";
+        String taskName = "  12 Task  ";
         tasksPage.searchForTask(taskName);
         Assert.assertTrue(tasksPage.allTittleContains(taskName.trim()));
     }

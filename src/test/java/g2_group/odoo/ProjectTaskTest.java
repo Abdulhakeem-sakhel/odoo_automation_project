@@ -7,18 +7,16 @@ import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import g2_group.odoo.util.ConfigReader;
+
 import org.testng.annotations.DataProvider;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class ProjectTaskTest extends BaseTest {
 
@@ -29,7 +27,6 @@ public class ProjectTaskTest extends BaseTest {
 	
 	@Override
 	protected String getPath() {
-		// TODO Auto-generated method stub
 		return "/odoo/project/148/tasks";
 	}
 	
@@ -124,6 +121,7 @@ public class ProjectTaskTest extends BaseTest {
 	        ((JavascriptExecutor) driver).executeScript("window.location.href='" + targetUrl + "';");
 	    }
 	}
+<<<<<<< HEAD
 	
 //	@BeforeClass
 //	public void initializePage() {
@@ -275,4 +273,6 @@ public class ProjectTaskTest extends BaseTest {
 //		driver.get(BASE_URL + getPath());
 //	}
 	
+=======
+>>>>>>> 31106a7df46dfa848c4ddaf0dc751d83f173738f
 }

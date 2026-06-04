@@ -1,10 +1,18 @@
 package g2_group.odoo;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import g2_group.odoo.util.ConfigReader;
 import g2_group.odoo.util.RandomStringUtil;
 
 public class Workflow_LoginTest extends BaseTest {
@@ -13,6 +21,7 @@ public class Workflow_LoginTest extends BaseTest {
 
     private String email = ConfigReader.getProperty("email");
     private String password = ConfigReader.getProperty("password");
+
     @Override
     protected String getPath() {
         return logInPath;
@@ -29,63 +38,73 @@ public class Workflow_LoginTest extends BaseTest {
         driver.get(BASE_URL + logInPath);
     }
 
-    @Test(priority = 1)
-    public void TC_LG_01_SuccessfulLogin() {
-        loginPage.loginFromUI(email, password);
-        Assert.assertTrue(loginPage.isLoggedIn(), "TC_LG_01 Failed: Could not login with valid credentials.");
+    @DataProvider(name = "loginDataProvider")
+    public Object[][] getLoginData() throws IOException {
+        List<Object[]> data = new ArrayList<>();
+        String csvFile = "src/test/resources/login_data.csv";
+        String line;
+
+        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+            br.readLine(); // Skip header row
+
+            while ((line = br.readLine()) != null) {
+                if (line.trim().isEmpty()) {
+                    continue;
+                }
+                // Preserve trailing empty cells
+                String[] row = line.split(",", -1);
+
+                String scenarioId = row[0].trim();
+                String emailValue = resolvePlaceholder(row[1]);
+                String passwordValue = resolvePlaceholder(row[2]);
+                boolean expectError = Boolean.parseBoolean(row[3].trim());
+                boolean expectLogin = Boolean.parseBoolean(row[4].trim());
+                String description = row[5].trim();
+
+                data.add(new Object[]{scenarioId, emailValue, passwordValue, expectError, expectLogin, description});
+            }
+        }
+        return data.toArray(new Object[0][]);
     }
 
-    @Test(priority = 2)
-    public void TC_LG_02_LoginWithInvalidPassword() {
-        loginPage.loginFromUI(email, "WrongPassword123");
-        Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_02 Failed: Logged in with wrong password.");
+    private String resolvePlaceholder(String raw) {
+        if (raw == null) {
+            return "";
+        }
+        switch (raw.trim()) {
+            case "{EMAIL}":
+                return email;
+            case "{PASSWORD}":
+                return password;
+            case "{PASSWORD_UPPER}":
+                return password.toUpperCase();
+            case "{EMAIL_PADDED}":
+                return " ".repeat(3) + email + " ".repeat(5);
+            case "{LONG_EMAIL}":
+                return RandomStringUtil.randomString(240) + "@gmail.com";
+            default:
+                return raw;
+        }
     }
 
-    @Test(priority = 3)
-    public void TC_LG_03_LoginWithInvalidUsername() {
-        loginPage.loginFromUI("fakeuser@gmail.com", password);
-        Assert.assertTrue(loginPage.isErrorMessage());
-        Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_03 Failed: Logged in with wrong username.");
-    }
+    @Test(dataProvider = "loginDataProvider")
+    public void executeLoginTests(String scenarioId, String emailValue, String passwordValue,
+                                  boolean expectError, boolean expectLogin, String description) {
+        System.out.println("Running Scenario " + scenarioId + " - " + description);
 
-    @Test(priority = 4)
-    public void TC_LG_04_LoginWithBlankFields() {
-        loginPage.loginFromUI("", "");
-        Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_04 Failed: Allowed login with blank fields.");
-    }
+        loginPage.loginFromUI(emailValue, passwordValue);
 
-    @Test(priority = 5)
-    public void TC_LG_05_LoginWithBlankPasswordOnly() {
-        loginPage.loginFromUI(email, "");
-        Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_05 Failed: Allowed login with blank password.");
-    }
+        if (expectError) {
+            Assert.assertTrue(loginPage.isErrorMessage(),
+                    scenarioId + " Failed: Expected error message was not displayed. (" + description + ")");
+        }
 
-    @Test(priority = 6)
-    public void TC_LG_06_LoginWithCaseSensitivePassword() {
-        loginPage.loginFromUI(email, password.toUpperCase());
-        Assert.assertTrue(loginPage.isErrorMessage());
-        Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_06 Failed: Password is not case-sensitive.");
-    }
-
-    @Test(priority = 7)
-    public void TC_LG_07_LoginWithExtraWhitespaceInUsername() {
-        loginPage.loginFromUI(" ".repeat(3) + email + " ".repeat(5), password);
-        Assert.assertTrue(loginPage.isErrorMessage());
-        Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_07 Failed: Allowed login with whitespaces.");
-    }
-
-    @Test(priority = 8)
-    public void TC_LG_08_LoginWithSQLInjectionPayload() {
-        loginPage.loginFromUI("' OR '1'='1", password);
-        Assert.assertTrue(loginPage.isErrorMessage());
-        Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_08 Failed: System vulnerable to SQL Injection.");
-    }
-
-    @Test(priority = 9)
-    public void TC_LG_09_LoginWithMaximumCharacterBoundary() {
-        String longEmail =  RandomStringUtil.randomString(240) + "@gmail.com";
-        loginPage.loginFromUI(longEmail, password);
-        Assert.assertTrue(loginPage.isErrorMessage());
-        Assert.assertFalse(loginPage.isLoggedIn(), "TC_LG_09 Failed: System allowed login with invalid long boundary email.");
+        if (expectLogin) {
+            Assert.assertTrue(loginPage.isLoggedIn(),
+                    scenarioId + " Failed: Could not login. (" + description + ")");
+        } else {
+            Assert.assertFalse(loginPage.isLoggedIn(),
+                    scenarioId + " Failed: Unexpected successful login. (" + description + ")");
+        }
     }
 }

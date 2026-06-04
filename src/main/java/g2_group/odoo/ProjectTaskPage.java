@@ -2,7 +2,6 @@ package g2_group.odoo;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -28,39 +27,11 @@ public class ProjectTaskPage {
     return new By.ByXPath(String.format("//span[contains(text(), '%s')]", taskTittle));
     }
     
-//    public By getTaskCard(String taskTitle) {
-//        String xpathExpression = String.format(
-//            "//article[contains(@class, 'o_kanban_record')][.//span[contains(@class, 'fw-bold') and normalize-space(text())='%s']]", 
-//            taskTitle
-//        );
-//        return By.xpath(xpathExpression);
-//    }
-    
     
     public ProjectTaskPage(WebDriver driver) {
     	this.driver=driver;
     	wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
-    
-    
-//    public void createTask(String taskTitle, String dueDate, String assignee) throws InterruptedException {
-//    	wait.until(ExpectedConditions.visibilityOfElementLocated(createNewTaskBtnBy)).click();
-//    	wait.until(ExpectedConditions.visibilityOfElementLocated(titleFieldBy)).sendKeys(taskTitle);
-//    	wait.until(ExpectedConditions.visibilityOfElementLocated(addTaskBtnBy)).click();
-//    	wait.until(ExpectedConditions.visibilityOfElementLocated(getTaskCard(taskTitle))).click();
-//    	wait.until(ExpectedConditions.visibilityOfElementLocated(assigneeFieldBy)).sendKeys(assignee+ Keys.ENTER);
-//    	wait.until(ExpectedConditions.visibilityOfElementLocated(addTaskBtnBy)).click();
-//    	try {
-//            Thread.sleep(500);
-//
-//        } catch(Exception e) {
-//            
-//        }
-//    	WebElement dateInput = wait.until(ExpectedConditions.visibilityOfElementLocated(dueDateBy));
-//    	dateInput.click();
-//    	dateInput.sendKeys(dueDate+ Keys.ENTER);
-//    }
-    
     
     public void createTask(String taskTitle, String dueDate, List<String> assignees) throws InterruptedException {
     	wait.until(ExpectedConditions.visibilityOfElementLocated(createNewTaskBtnBy)).click();
@@ -154,12 +125,4 @@ public class ProjectTaskPage {
         
         return text;
     }
-    
-//    public boolean verifyInvalidTitleErrorVisible(String expectedSubString) {
-//        By errorNotificationBy = By.cssSelector(".o_notification_body span.me-auto");
-//        
-//        // This waits until the element is visible AND contains the text you expect
-//        return wait.until(ExpectedConditions.textToBePresentInElementLocated(errorNotificationBy, expectedSubString));
-//    }
-
 }

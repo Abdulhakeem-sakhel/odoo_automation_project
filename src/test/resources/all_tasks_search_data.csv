@@ -1,0 +1,10 @@
+scenarioId,searchInputs,postAction,expectedContains,matchMode,expectNoResults,checkAlert,description
+TC_AT_01,API,none,API,ALL,false,false,Search returns tasks whose title contains the term
+TC_AT_02,api,none,api,ALL,false,false,Search is case-insensitive
+TC_AT_03,{PADDED_TASK},none,12 Task,ALL,false,false,Search ignores leading/trailing whitespace
+TC_AT_04,xyz123999,none,,NONE,true,false,Random non-existent term shows no results
+TC_AT_05,{LONG_STRING},none,,NONE,true,false,Very long search term shows no results
+TC_AT_06,{XSS_PAYLOAD},none,,NONE,true,true,Script injection shows no results and no alert
+TC_AT_07,Create Logo,filter-unassigned,,NONE,true,false,Search + Unassigned filter with no match shows no results
+TC_AT_08,xyz123999,group-project,,NONE,true,false,Search + grouping with no match shows no results
+TC_AT_09,API|UI,none,API|UI,ANY,false,false,Multiple search terms - titles contain at least one
